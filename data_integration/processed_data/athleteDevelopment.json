@@ -1,0 +1,10 @@
+{
+  "introductory": {
+    "ageRange": "6-9",
+    "skills": ["Dribbling Basics", "Ball Control", "Basic Movements"]
+  },
+  "foundational": {
+    "ageRange": "9-12",
+    "skills": ["Passing", "Triple Threat Positioning", "Fundamental Shooting"]
+  }
+}
