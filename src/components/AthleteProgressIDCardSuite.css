@@ -1,0 +1,392 @@
+.apid-main {
+  background: #22272b;
+  color: #fff;
+  border-radius: 28px;
+  box-shadow: 0 7px 38px rgba(24,27,32,0.17);
+  padding: 38px 38px 30px 38px;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 32px 0 42px 0;
+  max-width: 1650px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+.apid-header h2 {
+  color: #FFD700;
+  font-size: 2.10rem;
+  font-weight: 900;
+  letter-spacing: 1.2px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-bottom: 19px;
+}
+
+/* --- Microdashboard --- */
+.apid-microdashboard-row {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 32px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.apid-microdashboard-card {
+  background: #232a2e;
+  color: #FFD700;
+  border: 2.5px solid #FFD70055;
+  border-radius: 12px;
+  padding: 15px 26px;
+  font-size: 1.09rem;
+  font-weight: 900;
+  letter-spacing: 0.7px;
+  box-shadow: 0 2px 13px #FFD70013;
+  min-width: 110px;
+  text-align: center;
+}
+.apid-csv-btn, .apid-pdf-btn {
+  background: #232a2e;
+  color: #FFD700;
+  border: 2px solid #FFD700;
+  border-radius: 8px;
+  font-weight: 900;
+  padding: 8px 20px;
+  font-size: 1.06rem;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+.apid-csv-btn:hover, .apid-pdf-btn:hover {
+  background: #FFD700; color: #232a2e;
+}
+
+/* --- Grid and Cards --- */
+.apid-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(355px, 1fr));
+  gap: 26px;
+  margin-bottom: 36px;
+}
+.apid-card {
+  background: #232a2e;
+  border-radius: 18px;
+  box-shadow: 0 2px 13px #FFD70011;
+  padding: 23px 18px 16px 18px;
+  min-width: 315px;
+  font-size: 1.07rem;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 2px solid #FFD70018;
+  cursor: pointer;
+  transition: border 0.13s, box-shadow 0.13s, background 0.13s;
+  position: relative;
+}
+.apid-card:hover {
+  border: 2px solid #FFD700;
+  box-shadow: 0 4px 24px #FFD70022;
+  background: #2b3238;
+}
+.apid-risk-card {
+  border: 2.5px solid #f35650 !important;
+  background: #2d2628 !important;
+}
+.apid-card-header {
+  font-weight: 900;
+  font-size: 1.19rem;
+  color: #FFD700;
+  margin-bottom: 2px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  flex-wrap: wrap;
+}
+.apid-card-name {
+  font-size: 1.22rem;
+  font-weight: 900;
+  color: #FFD700;
+}
+.apid-card-role {
+  color: #b7bec9;
+  font-weight: 800;
+  font-size: 1.04rem;
+  margin-left: 2px;
+}
+.apid-card-age { color: #35b378; font-weight: 800; font-size: 1.01rem; margin-left: 7px;}
+.apid-card-id { color: #b7bec9; font-size: 0.97rem; margin-left: 10px;}
+.apid-card-status { margin-top: 2px; margin-bottom: 6px;}
+.apid-card-kpis {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 6px;
+  margin-top: 7px;
+}
+.apid-kpi-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.apid-kpi-label {
+  color: #FFD700;
+  font-size: 0.98rem;
+  font-weight: 900;
+}
+.apid-kpi-value {
+  font-size: 1.11rem;
+  font-weight: 900;
+  margin-top: 1px;
+}
+.apid-card-flags {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 4px;
+  flex-wrap: wrap;
+}
+.apid-flag {
+  background: #FFD700;
+  color: #232a2e;
+  border-radius: 7px;
+  padding: 2px 11px;
+  font-weight: 900;
+  font-size: 0.95rem;
+}
+.apid-compare-selector {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 1.03rem;
+  margin-top: 7px;
+  margin-bottom: 4px;
+  color: #FFD700;
+  user-select: none;
+}
+.apid-compare-selector input[type="checkbox"] {
+  accent-color: #FFD700;
+  width: 16px;
+  height: 16px;
+}
+
+/* --- Modal Overlay (Drilldown, Compare) --- */
+.apid-modal-overlay {
+  position: fixed;
+  left: 0; top: 0; width: 100vw; height: 100vh;
+  background: rgba(34,39,43,0.95);
+  z-index: 4000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.apid-modal {
+  background: #232a2e;
+  color: #FFD700;
+  border-radius: 23px;
+  box-shadow: 0 7px 38px #FFD70022;
+  padding: 34px 44px 19px 44px;
+  min-width: 490px;
+  max-width: 850px;
+  font-size: 1.13rem;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+.apid-modal-header {
+  font-size: 1.21rem;
+  color: #FFD700;
+  font-weight: 900;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+.apid-modal-close {
+  margin-left: auto;
+  font-size: 2.1rem;
+  color: #FFD700;
+  background: none;
+  border: none;
+  cursor: pointer;
+  opacity: 0.84;
+}
+.apid-modal-status {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+.apid-modal-kpi-row {
+  display: flex;
+  gap: 19px;
+  margin-bottom: 7px;
+  margin-top: 4px;
+}
+.apid-modal-kpi-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.apid-trend-up { color: #35b378; margin-left: 3px; font-size: 1.02rem;}
+.apid-trend-down { color: #f35650; margin-left: 3px; font-size: 1.02rem;}
+.apid-trend-steady { color: #FFD700; margin-left: 3px; font-size: 1.02rem;}
+
+.apid-modal-flags {
+  display: flex;
+  flex-direction: column;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+.apid-modal-flags-title {
+  color: #FFD700;
+  font-weight: 900;
+  margin-bottom: 4px;
+}
+.apid-modal-flags-list {
+  display: flex;
+  gap: 9px;
+  flex-wrap: wrap;
+}
+.apid-milestone-btn, .apid-feedback-btn {
+  background: #232a2e;
+  color: #FFD700;
+  border: 2px solid #FFD700;
+  border-radius: 7px;
+  font-size: 0.98rem;
+  font-weight: 900;
+  padding: 3px 13px;
+  margin-left: 5px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+.apid-milestone-btn:hover, .apid-feedback-btn:hover {
+  background: #FFD700; color: #232a2e;
+}
+.apid-modal-flags input[type="text"], .apid-modal-feedback input[type="text"] {
+  background: #2b3238;
+  color: #FFD700;
+  border-radius: 6px;
+  border: none;
+  padding: 6px 12px;
+  font-size: 1.01rem;
+  font-weight: 700;
+}
+.apid-modal-feedback {
+  background: #232a2e;
+  border-radius: 11px;
+  padding: 13px 18px 8px 18px;
+  margin-bottom: 9px;
+  margin-top: 7px;
+}
+.apid-modal-feedback-title {
+  color: #FFD700;
+  font-weight: 900;
+  font-size: 1.08rem;
+  margin-bottom: 7px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.apid-modal-feedback ul {
+  padding-left: 0;
+  list-style: none;
+}
+.apid-fb-active { color: #f35650; }
+.apid-fb-resolved { color: #35b378; }
+.apid-fb-badge {
+  background: #b7bec933;
+  border-radius: 7px;
+  padding: 2px 10px;
+  font-weight: 900;
+  font-size: 0.96rem;
+  margin-left: 12px;
+  display: inline-block;
+}
+.apid-fb-resolve-btn {
+  background: #232a2e;
+  color: #35b378;
+  border-radius: 7px;
+  border: 2px solid #35b378;
+  font-size: 0.98rem;
+  font-weight: 900;
+  padding: 3px 13px;
+  margin-left: 5px;
+  cursor: pointer;
+  transition: background 0.12s, color 0.12s;
+}
+.apid-fb-resolve-btn:hover {
+  background: #35b378; color: #232a2e;
+}
+.apid-modal-copilot {
+  margin-top: 17px;
+  background: #2b3238;
+  border-radius: 8px;
+  padding: 13px 19px;
+  color: #FFD700;
+  font-size: 1.07rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 900;
+  letter-spacing: 0.2px;
+}
+.apid-tagline {
+  margin-top: 44px;
+  text-align: center;
+  color: #FFD700;
+  font-size: 1.15rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  opacity: 0.81;
+  margin-bottom: 5px;
+}
+.apid-tagline-sticky {
+  position: absolute;
+  left: 36px;
+  bottom: 12px;
+  font-size: 1.09rem;
+  font-weight: 900;
+  opacity: 0.74;
+}
+.apid-badge {
+  font-size: 0.98rem;
+  font-weight: 900;
+  background: #b7bec933;
+  border-radius: 7px;
+  padding: 2px 12px;
+  margin-left: 6px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.apid-ok { background: #35b378 !important; color: #fff !important;}
+.apid-warn { background: #FFD700 !important; color: #232a2e !important;}
+.apid-risk { background: #f35650 !important; color: #fff !important;}
+/* --- Multi-compare overlay --- */
+.apid-modal-compare {
+  min-width: 800px;
+  max-width: 1300px;
+  padding-top: 40px;
+  padding-bottom: 25px;
+  padding-left: 38px;
+  padding-right: 38px;
+}
+.apid-compare-row {
+  display: flex;
+  gap: 22px;
+  margin-bottom: 17px;
+  flex-wrap: wrap;
+}
+.apid-compare-card {
+  background: #232a2e;
+  border-radius: 14px;
+  box-shadow: 0 2px 13px #FFD70011;
+  padding: 16px 14px 11px 14px;
+  min-width: 225px;
+  font-size: 1.06rem;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 2px solid #FFD70022;
+  margin-bottom: 6px;
+}

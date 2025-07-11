@@ -1,0 +1,23 @@
+/* src/components/SponsorshipValueProjectionEngine.css */
+#svp-pdf table {
+  border-collapse: collapse;
+  margin-top: 7px;
+  margin-bottom: 8px;
+}
+#svp-pdf th, #svp-pdf td {
+  border: 1px solid #FFD70022;
+  padding: 6px 7px;
+}
+#svp-pdf th {
+  background: #FFD70018;
+  color: #FFD700;
+}
+#svp-pdf td input, #svp-pdf td select {
+  background: #283e51;
+  color: #fff;
+  border: 1px solid #FFD70022;
+  font-size: 15px;
+}
+#svp-pdf button:focus {
+  outline: 2px solid #FFD700;
+}

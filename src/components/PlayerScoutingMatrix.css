@@ -1,0 +1,372 @@
+.psm-main {
+  background: #22272b;
+  color: #fff;
+  border-radius: 28px;
+  box-shadow: 0 7px 38px rgba(24,27,32,0.17);
+  padding: 38px 38px 30px 38px;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 32px 0 42px 0;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+.psm-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 19px;
+  margin-bottom: 18px;
+}
+.psm-header h2 {
+  color: #FFD700;
+  font-size: 2.22rem;
+  font-weight: 900;
+  letter-spacing: 1.3px;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+.psm-shortlist-btn, .psm-csv-btn, .psm-pdf-btn, .psm-add-btn {
+  background: #232a2e;
+  color: #FFD700;
+  border: 2px solid #FFD700;
+  border-radius: 8px;
+  font-weight: 900;
+  padding: 7px 19px;
+  font-size: 1.06rem;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+.psm-shortlist-btn:hover, .psm-csv-btn:hover, .psm-pdf-btn:hover, .psm-add-btn:hover {
+  background: #FFD700; color: #232a2e;
+}
+.psm-filter-row {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  background: #283E51;
+  border-radius: 11px;
+  padding: 10px 18px;
+  margin-bottom: 22px;
+  font-size: 1.09rem;
+}
+.psm-filter-row input, .psm-filter-row select {
+  background: #2b3238;
+  color: #FFD700;
+  font-size: 1.01rem;
+  font-weight: 700;
+  border-radius: 6px;
+  border: none;
+  padding: 6px 12px;
+}
+.psm-filter-btn {
+  background: #232a2e;
+  color: #35b378;
+  border: 2px solid #35b378;
+  border-radius: 7px;
+  padding: 5px 15px;
+  font-weight: 800;
+  font-size: 1.01rem;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background 0.12s, color 0.12s;
+}
+.psm-filter-btn:hover { background: #35b378; color: #232a2e; }
+.psm-player-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
+  gap: 28px;
+  margin-bottom: 33px;
+}
+.psm-empty {
+  font-size: 1.15rem;
+  color: #f35650;
+  text-align: center;
+  grid-column: 1/-1;
+  padding: 36px 0;
+  background: #232a2e;
+  border-radius: 13px;
+}
+.psm-card {
+  background: #2b3238;
+  border-radius: 13px;
+  box-shadow: 0 2px 11px #283E5133;
+  padding: 21px 24px 13px 21px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 260px;
+  font-size: 1.02rem;
+  font-weight: 700;
+  position: relative;
+  border: 2px solid transparent;
+  transition: border 0.13s, box-shadow 0.13s;
+}
+.psm-elite { border-color: #35b378; }
+.psm-potential { border-color: #FFD700; }
+.psm-risk { border-color: #f35650; }
+.psm-card-header {
+  font-size: 1.17rem;
+  font-weight: 900;
+  color: #FFD700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 3px;
+  flex-wrap: wrap;
+}
+.psm-card-row {
+  color: #b7bec9;
+  font-size: 1.04rem;
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+.psm-kpi-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px 18px;
+  margin-top: 7px;
+  font-size: 1.02rem;
+  color: #FFD700;
+  align-items: center;
+}
+.psm-kpi-val { color: #FFD700; position: relative; }
+.psm-kpi-trend { margin-left: 5px; }
+.psm-trend-up { color: #35b378; }
+.psm-trend-down { color: #f35650; }
+.psm-trend-steady { color: #FFD700; }
+.psm-complete-badge {
+  background: #35b37822;
+  color: #35b378;
+  border-radius: 8px;
+  padding: 2px 11px;
+  font-size: 0.99rem;
+  font-weight: 900;
+  margin-left: 7px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.psm-nba-badge {
+  background: #FFD70055;
+  color: #232a2e;
+  border-radius: 8px;
+  padding: 2px 9px;
+  font-size: 0.95rem;
+  font-weight: 800;
+  margin-left: 6px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.psm-badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin: 7px 0 4px 0;
+}
+.psm-tag-badge {
+  background: #232a2e;
+  color: #FFD700;
+  border-radius: 7px;
+  padding: 2px 10px;
+  font-weight: 800;
+  font-size: 0.95rem;
+  border: 2px solid #FFD700;
+}
+.psm-badge-agent { border-color: #35b378; color: #35b378;}
+.psm-badge-coach { border-color: #FFD700; color: #FFD700;}
+.psm-badge-med { border-color: #b7bec9; color: #b7bec9;}
+.psm-badge-shortlist { border-color: #FFD700; color: #FFD700;}
+.psm-badge-risk { border-color: #f35650; color: #f35650;}
+.psm-badge { font-size: 0.98rem; font-weight: 900; background: #b7bec933; border-radius: 7px; padding: 2px 12px; margin-left: 8px; display: inline-flex; align-items: center; gap: 6px;}
+.psm-elite .psm-badge { background: #35b37822; color: #35b378;}
+.psm-potential .psm-badge { background: #FFD70022; color: #FFD700;}
+.psm-risk .psm-badge { background: #f3565012; color: #f35650;}
+.psm-missing .psm-badge { background: #b7bec922; color: #b7bec9;}
+
+.psm-radar {
+  width: 210px;
+  height: 180px;
+  background: #232a2e;
+  border-radius: 9px;
+  margin: 13px auto 5px auto;
+  box-shadow: 0 2px 11px #FFD70019;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.psm-compare-radar {
+  width: 340px;
+  height: 270px;
+  margin: 0 auto 22px auto;
+  background: #283E51;
+}
+
+.psm-notes {
+  font-size: 0.97rem;
+  color: #b7bec9;
+  font-weight: 600;
+  margin-top: 4px;
+  text-align: left;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.psm-card-actions {
+  display: flex;
+  gap: 9px;
+  margin-top: 10px;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.psm-compare-btn, .psm-edit-btn, .psm-report-btn {
+  background: #232a2e;
+  color: #FFD700;
+  border-radius: 7px;
+  border: 2px solid #FFD700;
+  padding: 5px 13px;
+  font-weight: 800;
+  font-size: 1.01rem;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+.psm-compare-btn:hover, .psm-edit-btn:hover, .psm-report-btn:hover, .psm-btn-active {
+  background: #FFD700; color: #232a2e;
+}
+.psm-btn-active { background: #35b378; color: #fff; }
+
+.psm-compare-modal {
+  position: fixed;
+  left: 0; top: 0; width: 100vw; height: 100vh;
+  background: rgba(34,39,43,0.97);
+  z-index: 2000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 36px;
+}
+.psm-compare-header {
+  font-size: 1.32rem;
+  color: #FFD700;
+  font-weight: 900;
+  margin-bottom: 22px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+.psm-compare-close {
+  margin-left: 38px;
+  font-size: 2.3rem;
+  color: #FFD700;
+  background: none;
+  border: none;
+  cursor: pointer;
+  opacity: 0.84;
+}
+.psm-compare-grid {
+  display: flex;
+  gap: 27px;
+  justify-content: center;
+  align-items: flex-start;
+}
+.psm-compare { min-width: 260px; }
+
+.psm-compare-actions {
+  margin-top: 19px;
+  text-align: center;
+}
+.psm-tagline {
+  margin-top: 42px;
+  text-align: center;
+  color: #FFD700;
+  font-size: 1.16rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  opacity: 0.81;
+  margin-bottom: 5px;
+}
+
+/* --- MODAL Add/Edit --- */
+.psm-modal-overlay {
+  position: fixed;
+  left: 0; top: 0; width: 100vw; height: 100vh;
+  background: rgba(34,39,43,0.96);
+  z-index: 3000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.psm-modal {
+  background: #232a2e;
+  color: #FFD700;
+  border-radius: 19px;
+  box-shadow: 0 7px 38px #FFD70017;
+  padding: 34px 35px 22px 35px;
+  min-width: 350px;
+  max-width: 540px;
+  font-size: 1.08rem;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.psm-modal-header {
+  font-size: 1.19rem;
+  color: #FFD700;
+  font-weight: 900;
+  margin-bottom: 13px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+.psm-modal-close {
+  margin-left: auto;
+  font-size: 2.1rem;
+  color: #FFD700;
+  background: none;
+  border: none;
+  cursor: pointer;
+  opacity: 0.84;
+}
+.psm-modal-row {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.psm-modal label {
+  font-size: 1.06rem;
+  font-weight: 900;
+  color: #b7bec9;
+  margin-right: 5px;
+}
+.psm-modal input[type="text"], .psm-modal input[type="number"], .psm-modal select {
+  background: #2b3238;
+  color: #FFD700;
+  border-radius: 6px;
+  border: none;
+  padding: 6px 12px;
+  font-size: 1.01rem;
+  font-weight: 700;
+}
+.psm-modal input[type="checkbox"] {
+  margin-left: 7px;
+  accent-color: #FFD700;
+  width: 17px;
+  height: 17px;
+}
+.psm-modal-actions {
+  margin-top: 19px;
+  text-align: center;
+}
+.psm-modal-actions .psm-pdf-btn {
+  font-size: 1.08rem;
+  font-weight: 900;
+}

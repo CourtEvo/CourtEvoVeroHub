@@ -1,0 +1,368 @@
+.tai-main {
+  background: #232a2e;
+  color: #fff;
+  border-radius: 22px;
+  box-shadow: 0 6px 32px rgba(24, 27, 32, 0.32);
+  padding: 30px 30px 24px 30px;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 30px 0 32px 0;
+}
+
+.tai-header h2 {
+  color: #FFD700;
+  font-size: 2.1rem;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+  margin-bottom: 3px;
+}
+.tai-subtitle {
+  font-size: 1.08rem;
+  color: #1de682;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  margin-bottom: 14px;
+}
+
+.tai-section {
+  margin-top: 28px;
+}
+.tai-section-title {
+  color: #FFD700;
+  font-size: 1.09rem;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  margin-bottom: 7px;
+}
+
+.tai-pipeline-swimlane {
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+.tai-pipeline-card {
+  background: #283E51;
+  padding: 18px 22px;
+  border-radius: 16px;
+  border-left: 7px solid #FFD700;
+  min-width: 220px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: box-shadow 0.16s, transform 0.16s;
+  box-shadow: 0 3px 12px #1a1d2266;
+}
+.tai-pipeline-card:hover {
+  box-shadow: 0 6px 28px #1de68255;
+  transform: translateY(-2px) scale(1.03);
+  border-left: 7px solid #1de682;
+}
+.tai-pipeline-name {
+  font-weight: 600;
+  color: #FFD700;
+  font-size: 1.09rem;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+}
+.tai-pipeline-flow {
+  font-size: 0.99rem;
+  margin-bottom: 2px;
+  color: #fff;
+}
+.tai-pipeline-status {
+  margin-left: 10px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+.tai-pipeline-years {
+  color: #1de682;
+  font-size: 0.94rem;
+  font-weight: 500;
+}
+
+.tai-popup {
+  position: fixed;
+  left: 0; top: 0; width: 100vw; height: 100vh;
+  background: rgba(35,42,46,0.93);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tai-popup-content {
+  background: #232a2e;
+  border-radius: 19px;
+  padding: 34px 42px 20px 34px;
+  box-shadow: 0 6px 38px #1de68233;
+  position: relative;
+  min-width: 360px;
+  max-width: 90vw;
+}
+.tai-close {
+  position: absolute;
+  top: 13px; right: 17px;
+  background: none; border: none;
+  color: #FFD700;
+  font-size: 2.1rem;
+  cursor: pointer;
+  opacity: 0.8;
+}
+.tai-profile-title {
+  font-size: 1.35rem;
+  color: #FFD700;
+  font-weight: 700;
+  margin-bottom: 3px;
+  display: flex;
+  align-items: center;
+}
+.tai-profile-club {
+  font-size: 1.01rem;
+  color: #1de682;
+  margin-bottom: 12px;
+}
+.tai-profile-timeline-title {
+  font-size: 1.02rem;
+  color: #FFD700;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.tai-timeline-list {
+  list-style: none;
+  margin: 0; padding: 0;
+}
+.tai-timeline-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  font-size: 1.01rem;
+  gap: 8px;
+}
+.tai-timeline-year {
+  color: #FFD700;
+  font-weight: 700;
+  width: 68px;
+}
+.tai-timeline-stage {
+  color: #fff;
+  font-weight: 500;
+}
+.tai-timeline-highlight {
+  color: #1de682;
+  font-size: 0.97rem;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.tai-alumni-list {
+  display: flex;
+  gap: 21px;
+  flex-wrap: wrap;
+}
+.tai-alumni-card {
+  background: #20262a;
+  border-radius: 15px;
+  padding: 16px 24px 13px 17px;
+  border: 3px solid #FFD700;
+  min-width: 210px;
+  margin-bottom: 7px;
+  transition: border 0.15s;
+}
+.tai-alumni-name {
+  font-weight: 700;
+  color: #FFD700;
+  margin-bottom: 2px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.tai-mentor-tag {
+  background: #1de682;
+  color: #232a2e;
+  padding: 1px 7px 1px 4px;
+  border-radius: 8px;
+  font-size: 0.93rem;
+  font-weight: 600;
+  margin-left: 8px;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.tai-alumni-role {
+  color: #FFD700;
+  font-weight: 500;
+  font-size: 1.01rem;
+}
+.tai-alumni-meta {
+  color: #1de682;
+  font-size: 0.93rem;
+  margin-bottom: 3px;
+  display: flex;
+  gap: 17px;
+}
+.tai-alumni-teams {
+  color: #fff;
+  font-size: 0.97rem;
+  margin-bottom: 1px;
+}
+
+.tai-heatmap {
+  margin-top: 6px;
+}
+.tai-heatmap-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  gap: 9px;
+}
+.tai-heatmap-name {
+  min-width: 105px;
+  color: #FFD700;
+  font-weight: 700;
+  font-size: 1.01rem;
+}
+.tai-heatmap-level {
+  border-radius: 11px;
+  background: #FFD700;
+  color: #232a2e;
+  font-weight: 700;
+  padding: 6px 17px;
+  font-size: 0.98rem;
+  min-width: 55px;
+  box-shadow: 0 1px 7px #1de68244;
+  transition: background 0.13s, width 0.14s;
+}
+
+.tai-kpi-row {
+  display: flex;
+  gap: 27px;
+  margin: 15px 0 9px 0;
+}
+.tai-kpi-card {
+  background: #20262a;
+  border-radius: 13px;
+  padding: 17px 18px 8px 18px;
+  min-width: 108px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 1px 8px #1de68222;
+}
+.tai-kpi-icon {
+  color: #FFD700;
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+.tai-kpi-value {
+  font-size: 1.34rem;
+  font-weight: 700;
+  color: #1de682;
+}
+.tai-kpi-label {
+  color: #FFD700;
+  font-size: 0.97rem;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 2px;
+}
+
+.tai-timeline {
+  margin-top: 18px;
+}
+.tai-timeline-title {
+  font-size: 1.03rem;
+  color: #FFD700;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+.tai-ai-panel {
+  background: #22282c;
+  border-radius: 13px;
+  color: #FFD700;
+  font-size: 1.08rem;
+  padding: 12px 17px;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  margin-top: 5px;
+  box-shadow: 0 1px 7px #1de68244;
+}
+.tai-swimlane-wrap {
+  display: flex;
+  gap: 28px;
+  margin-bottom: 14px;
+  overflow-x: auto;
+}
+.tai-swimlane {
+  background: #20262a;
+  border-radius: 17px;
+  padding: 14px 10px 18px 10px;
+  min-width: 160px;
+  min-height: 185px;
+  box-shadow: 0 2px 12px #1de68217;
+  flex: 0 0 175px;
+  transition: box-shadow 0.14s;
+}
+.tai-swimlane-title {
+  font-weight: 700;
+  color: #FFD700;
+  font-size: 1.08rem;
+  margin-bottom: 6px;
+}
+.tai-swimlane-metrics {
+  font-size: 0.96rem;
+  color: #1de682;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+
+.tai-alumni-filter {
+  margin-left: 18px;
+  color: #FFD700;
+  font-size: 0.98rem;
+}
+.tai-alumni-filter button {
+  background: transparent;
+  border: none;
+  color: #1de682;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0 5px;
+}
+.tai-alumni-score {
+  color: #1de682;
+  font-weight: 600;
+  font-size: 0.96rem;
+  margin-top: 6px;
+}
+
+.tai-funnel-row {
+  display: flex;
+  gap: 25px;
+  margin: 15px 0 6px 0;
+  flex-wrap: wrap;
+}
+.tai-funnel-card {
+  background: #283E51;
+  border-radius: 10px;
+  padding: 9px 16px;
+  min-width: 115px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 1px 8px #FFD70017;
+}
+.tai-funnel-label {
+  color: #FFD700;
+  font-weight: 500;
+  font-size: 0.98rem;
+  margin-bottom: 2px;
+}
+.tai-funnel-val {
+  color: #1de682;
+  font-weight: 700;
+  font-size: 1.15rem;
+}

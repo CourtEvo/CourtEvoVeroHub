@@ -1,0 +1,435 @@
+.irtp-main {
+  background: #22272b;
+  color: #fff;
+  border-radius: 28px;
+  box-shadow: 0 7px 38px rgba(24,27,32,0.17);
+  padding: 38px 38px 30px 38px;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 32px 0 42px 0;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+.irtp-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 22px;
+  margin-bottom: 19px;
+}
+.irtp-header h2 {
+  color: #FFD700;
+  font-size: 2.12rem;
+  font-weight: 900;
+  letter-spacing: 1.2px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+.irtp-pdf-btn, .irtp-csv-btn {
+  background: #232a2e;
+  color: #FFD700;
+  border: 2px solid #FFD700;
+  border-radius: 8px;
+  font-weight: 900;
+  padding: 8px 20px;
+  font-size: 1.06rem;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+.irtp-pdf-btn:hover, .irtp-csv-btn:hover {
+  background: #FFD700; color: #232a2e;
+}
+.irtp-analytics-bar {
+  background: #232a2e;
+  border-radius: 13px;
+  box-shadow: 0 2px 11px #283E5133;
+  padding: 16px 23px 10px 23px;
+  margin-bottom: 22px;
+  width: 520px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.irtp-analytics-title {
+  color: #FFD700;
+  font-size: 1.09rem;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.irtp-copilot-card {
+  background: #232a2e;
+  border-radius: 13px;
+  box-shadow: 0 2px 11px #283E5133;
+  padding: 16px 22px 13px 22px;
+  margin-bottom: 22px;
+  width: 560px;
+  max-width: 100%;
+}
+.irtp-copilot-title {
+  color: #FFD700;
+  font-size: 1.08rem;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+  margin-bottom: 7px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.irtp-copilot-col {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.irtp-copilot-actions {
+  margin-top: 6px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.irtp-copilot-btn {
+  background: #232a2e;
+  color: #35b378;
+  border-radius: 7px;
+  border: 2px solid #35b378;
+  font-size: 1.02rem;
+  font-weight: 900;
+  padding: 5px 16px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.13s;
+}
+.irtp-copilot-btn:hover { background: #35b378; color: #232a2e; }
+
+.irtp-grid {
+  margin-bottom: 23px;
+  border-radius: 14px;
+  background: #232a2e;
+  box-shadow: 0 2px 11px #283E5133;
+  overflow-x: auto;
+}
+.irtp-grid-header {
+  background: #283E51;
+  color: #FFD700;
+  font-weight: 900;
+  font-size: 1.09rem;
+}
+.irtp-grid-row {
+  display: grid;
+  grid-template-columns: 120px 140px 110px 90px 120px 120px 110px 115px 80px;
+  align-items: center;
+  border-bottom: 1px solid #b7bec91c;
+  padding: 8px 9px;
+  font-size: 1.05rem;
+}
+.irtp-empty {
+  color: #b7bec9;
+  font-size: 1.09rem;
+  text-align: center;
+  grid-column: 1/-1;
+}
+.irtp-badge {
+  font-size: 0.98rem;
+  font-weight: 900;
+  background: #b7bec933;
+  border-radius: 7px;
+  padding: 2px 12px;
+  margin-left: 6px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.irtp-edit-btn {
+  background: #232a2e;
+  color: #FFD700;
+  border-radius: 7px;
+  border: 2px solid #FFD700;
+  font-size: 1.01rem;
+  font-weight: 900;
+  padding: 3px 13px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+.irtp-edit-btn:hover {
+  background: #FFD700; color: #232a2e;
+}
+.irtp-protocol-bar {
+  display: flex;
+  gap: 5px;
+}
+.irtp-protocol-phase {
+  background: #b7bec944;
+  color: #232a2e;
+  border-radius: 6px;
+  padding: 3px 11px;
+  font-size: 1.07rem;
+  font-weight: 900;
+  margin-right: 2px;
+  border: 1.5px solid #b7bec999;
+  transition: background 0.13s, color 0.13s, border 0.13s;
+}
+.irtp-phase-active { background: #FFD700 !important; color: #232a2e !important; border: 2px solid #FFD700 !important;}
+.irtp-phase-cleared { background: #35b378 !important; color: #fff !important; border: 2px solid #35b378 !important;}
+
+/* --- Modal Overlay --- */
+.irtp-modal-overlay {
+  position: fixed;
+  left: 0; top: 0; width: 100vw; height: 100vh;
+  background: rgba(34,39,43,0.94);
+  z-index: 4000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.irtp-modal {
+  background: #232a2e;
+  color: #FFD700;
+  border-radius: 23px;
+  box-shadow: 0 7px 38px #FFD70022;
+  padding: 34px 44px 19px 44px;
+  min-width: 530px;
+  max-width: 880px;
+  font-size: 1.13rem;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+.irtp-modal-header {
+  font-size: 1.21rem;
+  color: #FFD700;
+  font-weight: 900;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+.irtp-modal-close {
+  margin-left: auto;
+  font-size: 2.1rem;
+  color: #FFD700;
+  background: none;
+  border: none;
+  cursor: pointer;
+  opacity: 0.84;
+}
+.irtp-modal-status {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+.irtp-modal-timeline-title {
+  color: #FFD700;
+  font-weight: 900;
+  margin-bottom: 5px;
+  margin-top: 7px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.irtp-modal-timeline {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+.irtp-modal-phase {
+  background: #b7bec933;
+  border-radius: 9px;
+  border: 2.5px solid #b7bec988;
+  padding: 10px 17px;
+  min-width: 125px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 1.01rem;
+  font-weight: 900;
+  box-shadow: 0 2px 8px #FFD70010;
+}
+.irtp-modal-phase-active {
+  background: #FFD700 !important;
+  color: #232a2e !important;
+  border: 2.5px solid #FFD700 !important;
+}
+.irtp-modal-phase-cleared {
+  background: #35b378 !important;
+  color: #fff !important;
+  border: 2.5px solid #35b378 !important;
+}
+.irtp-phase-step { font-size: 1.07rem; font-weight: 900;}
+.irtp-phase-staff { font-size: 0.99rem; color: #FFD700; margin-top: 2px;}
+.irtp-phase-dates { font-size: 0.99rem; color: #b7bec9; margin-top: 2px;}
+.irtp-phase-days {
+  font-size: 0.97rem;
+  color: #FFD700;
+  margin-top: 2px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.irtp-overdue-days {
+  color: #f35650 !important;
+  font-weight: 900;
+  margin-left: 4px;
+}
+.irtp-phase-status { margin-top: 2px;}
+.irtp-phase-badge {
+  border-radius: 6px;
+  padding: 1.5px 9px;
+  font-weight: 900;
+  font-size: 0.96rem;
+  margin-left: 7px;
+  margin-top: 2px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.irtp-phase-ok { background: #35b378; color: #fff; }
+.irtp-phase-warn { background: #FFD700; color: #232a2e; }
+.irtp-phase-risk { background: #f35650; color: #fff; }
+
+/* Phase Editor */
+.irtp-phaseeditor {
+  background: #2b3238;
+  border-radius: 13px;
+  padding: 10px 19px;
+  margin-bottom: 8px;
+}
+.irtp-phaseeditor-row {
+  display: flex;
+  gap: 11px;
+  margin-bottom: 6px;
+}
+.irtp-edit-input {
+  background: #283E51;
+  color: #FFD700;
+  border-radius: 6px;
+  border: none;
+  padding: 5px 10px;
+  font-size: 1.01rem;
+  font-weight: 700;
+}
+.irtp-phaseeditor-btn {
+  background: #232a2e;
+  color: #FFD700;
+  border: 2px solid #FFD700;
+  border-radius: 7px;
+  font-size: 0.98rem;
+  font-weight: 900;
+  padding: 3px 13px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+.irtp-phaseeditor-btn:hover,
+.irtp-sign-btn:hover {
+  background: #FFD700; color: #232a2e;
+}
+.irtp-phaseeditor-add {
+  margin-top: 8px;
+}
+
+.irtp-modal-notes-title {
+  color: #FFD700;
+  font-weight: 900;
+  margin-bottom: 6px;
+  margin-top: 9px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.irtp-modal-notes-list {
+  background: #232a2e;
+  border-radius: 9px;
+  padding: 8px 17px 7px 17px;
+  margin-bottom: 7px;
+  margin-top: 3px;
+}
+.irtp-modal-note {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 1.01rem;
+  color: #FFD700;
+  margin-bottom: 4px;
+}
+.irtp-modal-note-date { color: #b7bec9; font-size: 0.98rem;}
+.irtp-modal-note-user { color: #35b378; font-size: 1.01rem;}
+.irtp-modal-note-text { color: #FFD700; font-size: 1.01rem; }
+.irtp-addnote-btn {
+  background: #232a2e;
+  color: #FFD700;
+  border: 2px solid #FFD700;
+  border-radius: 7px;
+  font-size: 0.98rem;
+  font-weight: 900;
+  padding: 3px 13px;
+  margin-left: 5px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+.irtp-addnote-btn:hover {
+  background: #FFD700; color: #232a2e;
+}
+.irtp-modal-notes-list input[type="text"] {
+  background: #2b3238;
+  color: #FFD700;
+  border-radius: 6px;
+  border: none;
+  padding: 6px 12px;
+  font-size: 1.01rem;
+  font-weight: 700;
+}
+.irtp-modal-compliance {
+  margin-top: 8px;
+  color: #FFD700;
+  font-weight: 900;
+  font-size: 1.09rem;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.irtp-sign-btn {
+  background: #232a2e;
+  color: #FFD700;
+  border: 2px solid #FFD700;
+  border-radius: 8px;
+  font-weight: 900;
+  padding: 4px 15px;
+  font-size: 1.01rem;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background 0.15s, color 0.15s;
+}
+.irtp-signed {
+  background: #35b378 !important;
+  color: #fff !important;
+  border: 2px solid #35b378 !important;
+}
+.irtp-modal-compliance .irtp-phase-badge {
+  margin-left: 15px;
+}
+.irtp-tagline {
+  margin-top: 44px;
+  text-align: center;
+  color: #FFD700;
+  font-size: 1.13rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  opacity: 0.81;
+  margin-bottom: 5px;
+}
+.irtp-tagline-sticky {
+  position: absolute;
+  left: 36px;
+  bottom: 12px;
+  font-size: 1.09rem;
+  font-weight: 900;
+  opacity: 0.74;
+}

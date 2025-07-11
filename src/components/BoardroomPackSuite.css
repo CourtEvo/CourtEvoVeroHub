@@ -1,0 +1,99 @@
+.bps-root { background: #232a2e; color: #fff; font-family: 'Segoe UI', sans-serif; border-radius: 22px; box-shadow: 0 2px 18px #232a2e60; padding: 32px 38px 29px 38px; margin: 24px auto; max-width: 940px; }
+.bps-cover { text-align: center; margin-bottom: 26px; position: relative; }
+.bps-logo-wrap { display: inline-block; position: relative; }
+.bps-logo { width: 78px; height: 78px; border-radius: 50%; background: #232a2e; object-fit: contain; box-shadow: 0 1px 12px #FFD70027; margin-bottom: 12px; }
+.bps-logo-upload-btn { position: absolute; right: -11px; bottom: 7px; background: #FFD700; color: #232a2e; border: none; border-radius: 50%; width: 29px; height: 29px; cursor: pointer; font-size: 1.1em; }
+.bps-club-title-edit-wrap { margin-bottom: 6px; }
+.bps-club-title { font-size: 1.48rem; font-weight: 700; color: #FFD700; cursor: pointer; }
+.bps-club-title-edit { font-size: 1.32rem; font-weight: 700; color: #FFD700; border-radius: 8px; padding: 2px 15px; border: 1px solid #FFD70088; }
+.bps-pack-title { font-size: 2.07rem; color: #1de682; font-weight: 800; margin-bottom: 6px; letter-spacing: 2px; }
+.bps-pack-date { color: #FFD700; font-size: 1.13rem; margin-bottom: 8px; }
+.bps-signoff { color: #FFD700; font-size: 1.07rem; margin-bottom: 5px; }
+.bps-watermark { position: absolute; bottom: 10px; left: 0; width: 100%; color: #FFD70055; font-size: 0.93em; letter-spacing: 1px; text-align: center; pointer-events: none; user-select: none; }
+
+.bps-toc-section { background: #202427; border-radius: 13px; padding: 17px 19px 10px 19px; margin-bottom: 16px; }
+.bps-toc-head { font-weight: 700; font-size: 1.13rem; color: #FFD700; display: flex; align-items: center; cursor: pointer; }
+.bps-toc-list { margin: 0; padding: 0 0 0 16px; list-style: none; }
+.bps-toc-list li { font-size: 1.07rem; color: #fff; margin-bottom: 3px; display: flex; align-items: center; }
+.bps-toc-index { color: #FFD700; font-weight: 700; margin-right: 6px; }
+.bps-toc-page { color: #1de682; font-weight: 700; margin-left: 13px; font-size: 1.01em; }
+
+.bps-summary-section { background: #202427; border-radius: 13px; padding: 17px 19px 12px 19px; margin-bottom: 18px; }
+.bps-summary-title { color: #FFD700; font-weight: 700; font-size: 1.11rem; display: flex; align-items: center; margin-bottom: 4px; }
+.bps-summary-list { margin: 0; padding: 0 0 0 17px; color: #fff; font-size: 1.05rem; }
+.bps-summary-item { display: flex; align-items: center; }
+.bps-highlight-edit { font-size: 1.04em; color: #1de682; border-radius: 7px; padding: 3px 9px; border: 1px solid #1de68277; margin-right: 8px; }
+.bps-highlight-edit-btn, .bps-highlight-remove-btn, .bps-highlight-save { background: transparent; border: none; color: #FFD700; cursor: pointer; margin-left: 5px; font-size: 1.05em; }
+.bps-highlight-save { color: #1de682; }
+.bps-highlight-add-row { display: flex; gap: 8px; align-items: center; margin-top: 6px; }
+.bps-highlight-add-input { background: #232a2e; color: #FFD700; border: 1px solid #FFD70044; border-radius: 7px; padding: 4px 10px; font-size: 1.01em; flex: 2; }
+.bps-highlight-add-btn { background: #1de682; color: #232a2e; border: none; border-radius: 8px; padding: 5px 16px; font-weight: 700; font-size: 1.01em; cursor: pointer; }
+.bps-ai-btn { background: #FFD700; color: #232a2e; border-radius: 7px; border: none; font-weight: 700; font-size: 1.01em; padding: 7px 19px; cursor: pointer; margin: 11px 0 0 0; }
+.bps-ai-btn:hover { background: #1de682; color: #232a2e; }
+.bps-ai-summary { background: #232a2e; border-radius: 11px; margin: 9px 0 4px 0; padding: 10px 15px; box-shadow: 0 1px 7px #1de68238; color: #FFD700; font-size: 1.01em; white-space: pre-wrap; }
+
+.bps-signature-section { background: #202427; border-radius: 12px; margin-bottom: 15px; padding: 15px 22px 11px 19px; }
+.bps-signature-title { color: #FFD700; font-weight: 700; margin-bottom: 5px; font-size: 1.09em; display: flex; align-items: center; }
+.bps-signature { color: #1de682; font-size: 1.11em; font-weight: 700; cursor: pointer; }
+.bps-signature-input { background: #232a2e; color: #1de682; border: 1px solid #1de68277; border-radius: 7px; padding: 4px 14px; font-size: 1.07em; margin-right: 7px; }
+.bps-signature-save { background: #1de682; color: #232a2e; border-radius: 7px; border: none; font-weight: 700; font-size: 1em; padding: 4px 11px; cursor: pointer; margin-right: 6px; }
+.bps-signature-warning { color: #FF4444; margin-left: 14px; font-size: 1.02em; }
+
+.bps-select-section { margin-bottom: 18px; }
+.bps-select-head { font-weight: 700; font-size: 1.07rem; color: #FFD700; margin-bottom: 5px; }
+.bps-select-list { display: flex; flex-wrap: wrap; gap: 13px; }
+.bps-select-item { display: flex; align-items: center; font-size: 1.01rem; color: #fff; gap: 7px; background: #232a2e; border-radius: 7px; padding: 7px 12px; box-shadow: 0 1px 5px #FFD70018; }
+.bps-select-item input[type="checkbox"] { accent-color: #1de682; margin-right: 7px; width: 16px; height: 16px; }
+
+.bps-export-row { text-align: right; margin-bottom: 11px; }
+.bps-export-btn { background: #FFD700; color: #232a2e; border-radius: 11px; font-weight: 700; font-size: 1.13em; padding: 11px 32px; border: none; box-shadow: 0 2px 7px #FFD70033; cursor: pointer; transition: background 0.13s; }
+.bps-export-btn:disabled { opacity: 0.7; cursor: not-allowed; }
+.bps-export-btn:hover { background: #1de682; color: #232a2e; }
+
+.bps-log-section { background: #202427; border-radius: 12px; margin-bottom: 10px; padding: 13px 22px 9px 17px; }
+.bps-log-title { color: #FFD700; font-weight: 700; margin-bottom: 4px; display: flex; align-items: center; font-size: 1.07em; }
+.bps-log-list { margin: 0; padding: 0 0 0 9px; color: #fff; font-size: 1.01em; }
+.bps-log-date { color: #FFD700; font-weight: 700; margin-right: 9px; }
+.bps-log-signer { color: #1de682; font-weight: 700; margin-right: 8px; }
+.bps-log-modules { color: #FFD700; font-size: 0.97em; }
+
+.bps-footer { margin-top: 18px; font-size: 1.02rem; color: #FFD700; text-align: right; }
+.bps-risk-alert { background: #FF444433; color: #FF4444; border-radius: 8px; padding: 10px 16px; font-size: 1.08em; font-weight: 700; margin-bottom: 14px; display: flex; align-items: center; }
+.bps-mode-row { display: flex; gap: 11px; margin-bottom: 13px; }
+.bps-mode-btn { background: #FFD70033; color: #FFD700; font-weight: 700; border: none; border-radius: 7px; padding: 7px 19px; font-size: 1.07em; cursor: pointer; }
+.bps-mode-btn.active, .bps-mode-btn:hover { background: #FFD700; color: #232a2e; }
+.bps-hero-section { background: #202427; border-radius: 13px; padding: 16px 22px 11px 22px; margin-bottom: 15px; text-align: left; }
+.bps-hero-label { color: #FFD700; font-weight: 700; font-size: 1.07em; margin-bottom: 4px; display: flex; align-items: center; gap: 13px; }
+.bps-hero-upload-btn { background: #FFD700; color: #232a2e; border-radius: 7px; border: none; font-weight: 700; font-size: 1em; padding: 3px 10px; cursor: pointer; margin-left: 9px; }
+.bps-hero-visual img { max-width: 100%; max-height: 190px; border-radius: 11px; margin: 9px 0; box-shadow: 0 1px 10px #FFD70029; }
+.bps-custom-section-row { background: #202427; border-radius: 11px; padding: 13px 19px 12px 19px; margin-bottom: 11px; display: flex; gap: 11px; align-items: center; }
+.bps-custom-section-title { color: #FFD700; font-weight: 700; margin-right: 11px; }
+.bps-custom-title { flex: 1; background: #232a2e; color: #FFD700; border: 1px solid #FFD70044; border-radius: 7px; padding: 4px 10px; font-size: 1em; }
+.bps-custom-content { flex: 2; background: #232a2e; color: #1de682; border: 1px solid #1de68244; border-radius: 7px; padding: 4px 10px; font-size: 1em; }
+.bps-custom-add-btn { background: #1de682; color: #232a2e; border: none; border-radius: 7px; padding: 4px 14px; font-weight: 700; cursor: pointer; }
+.bps-custom-section-list { margin-bottom: 10px; }
+.bps-custom-section-card { background: #232a2e; border-radius: 8px; margin-bottom: 7px; padding: 9px 13px; position: relative; }
+.bps-custom-remove-btn { background: transparent; border: none; color: #FF4444; position: absolute; right: 13px; top: 12px; cursor: pointer; }
+.bps-section-order-title { font-size: 1.07em; color: #FFD700; font-weight: 700; margin-bottom: 7px; margin-top: 10px; }
+.bps-section-order-list { list-style: none; padding: 0; margin: 0 0 14px 0; }
+.bps-section-order-item { background: #232a2e; color: #fff; border: 1px solid #FFD70022; border-radius: 7px; padding: 6px 14px; font-size: 1em; margin-bottom: 5px; cursor: grab; display: flex; align-items: center; gap: 13px; }
+.bps-section-drag-icon { color: #FFD700; font-size: 1.08em; }
+.bps-signatories-list { list-style: none; padding: 0; margin: 0; }
+.bps-signatory-name { color: #FFD700; font-weight: 700; margin-right: 11px; }
+.bps-sign-btn { background: #FFD700; color: #232a2e; border-radius: 8px; border: none; font-weight: 700; font-size: 1em; padding: 4px 13px; cursor: pointer; margin-right: 12px; }
+.bps-sign-btn.signed { background: #1de682; color: #232a2e; }
+.bps-secure-link { color: #1de682; margin-top: 9px; font-size: 1.06em; display: flex; align-items: center; gap: 8px; }
+.bps-preview { background: #202427; border-radius: 12px; padding: 18px 23px; }
+.bps-preview-label { color: #FFD700; font-weight: 700; font-size: 1.12em; margin-bottom: 10px; }
+.bps-preview-cover { text-align: center; margin-bottom: 14px; }
+.bps-preview-logo { width: 62px; height: 62px; border-radius: 50%; margin-bottom: 6px; }
+.bps-preview-title { font-size: 1.38rem; color: #FFD700; font-weight: 700; }
+.bps-preview-sub { color: #1de682; font-size: 1.05rem; }
+.bps-preview-date { color: #FFD700; font-size: 1.02rem; margin-bottom: 4px; }
+.bps-preview-hero img { max-width: 100%; max-height: 150px; border-radius: 10px; margin: 8px 0; }
+.bps-preview-highlights { color: #FFD700; margin: 10px 0; }
+.bps-preview-section { margin-bottom: 15px; padding: 8px 0; border-bottom: 1px solid #FFD70022; }
+.bps-preview-signatures { color: #1de682; font-weight: 700; margin-top: 16px; }
+.bps-preview-watermark { color: #FFD70033; text-align: center; margin-top: 18px; font-size: 0.97em; }
+.bps-log-link { color: #1de682; font-size: 0.97em; margin-left: 11px; }
+.bps-log-appendix { color: #FFD700aa; margin-top: 4px; font-size: 0.97em; }

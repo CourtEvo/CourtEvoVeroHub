@@ -1,0 +1,59 @@
+.dle-root { background: #232a2e; color: #fff; font-family: 'Segoe UI', sans-serif; border-radius: 22px; box-shadow: 0 2px 18px 0 #232a2e60; padding: 32px 36px 28px 36px; margin: 24px auto; max-width: 1280px; }
+.dle-header { display: flex; align-items: center; gap: 24px; margin-bottom: 12px; }
+.dle-title { font-size: 2.07rem; font-weight: bold; letter-spacing: 2px; color: #FFD700; }
+.dle-sub { font-size: 1.08rem; color: #1de682; margin-left: 18px; font-weight: 600; flex: 1; }
+.dle-export-btn { background: #FFD700; color: #232a2e; font-weight: 700; border-radius: 15px; border: none; padding: 10px 22px; font-size: 1.07rem; margin-left: auto; cursor: pointer; box-shadow: 0 2px 7px #FFD70033; transition: background 0.13s; }
+.dle-export-btn:hover { background: #1de682; color: #232a2e; }
+.dle-analytics-row { display: flex; gap: 24px; align-items: center; margin-bottom: 10px; }
+.dle-analytic { background: #232a2e; color: #FFD700; border-radius: 8px; padding: 6px 15px; font-size: 1.05em; display: flex; align-items: center; gap: 8px; }
+.dle-ai-btn { background: #FFD700; color: #232a2e; border-radius: 7px; border: none; font-weight: 700; font-size: 1.01em; padding: 6px 17px; cursor: pointer; margin-left: 14px; }
+.dle-ai-btn:hover { background: #1de682; color: #232a2e; }
+.dle-ai-review-box { background: #232a2e; border-radius: 12px; margin: 7px 0 12px 0; padding: 12px 15px; box-shadow: 0 1px 7px #1de68238; color: #FFD700; font-size: 1.01em; white-space: pre-wrap; }
+
+.dle-filters { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
+.dle-filter { background: #232a2e; color: #FFD700; border-radius: 10px; display: flex; align-items: center; padding: 3px 12px; }
+.dle-filter-input { background: #232a2e; color: #FFD700; border: none; outline: none; font-size: 1.01em; width: 150px; }
+.dle-filter-select { background: #232a2e; color: #FFD700; border-radius: 8px; font-size: 1.01em; border: 1px solid #FFD70033; padding: 2px 10px; }
+.dle-filter-date { background: #232a2e; color: #FFD700; border-radius: 8px; border: 1px solid #FFD70033; font-size: 1.01em; padding: 2px 10px; }
+.dle-add-btn { background: #1de682; color: #232a2e; border: none; border-radius: 8px; font-weight: 700; font-size: 1.01em; padding: 7px 15px; margin-left: 11px; cursor: pointer; }
+.dle-add-btn:hover { background: #FFD700; color: #232a2e; }
+.dle-timeline { margin-top: 11px; }
+.dle-timeline-today { font-size: 1.04em; color: #FFD700; font-weight: 700; margin: 13px 0 6px 0; padding-left: 10px; border-left: 4px solid #FFD70066; }
+.dle-timeline-divider { color: #1de682; border-color: #1de68299; }
+.dle-event { display: flex; gap: 18px; margin-bottom: 19px; align-items: flex-start; }
+.dle-dot { min-width: 44px; min-height: 44px; border-radius: 50%; background: #FFD700; display: flex; align-items: center; justify-content: center; box-shadow: 0 1px 10px #FFD70017; margin-top: 6px; }
+.dle-main { flex: 1; }
+.dle-event-row { display: flex; align-items: center; gap: 11px; margin-bottom: 2px; flex-wrap: wrap; }
+.dle-event-date { color: #FFD700; font-weight: 700; }
+.dle-event-owner { color: #1de682; font-weight: 700; font-size: 1.01em; }
+.dle-event-category { background: #FFD70033; color: #FFD700; border-radius: 6px; padding: 3px 8px; font-size: 0.98em; margin-right: 4px; }
+.dle-event-status { background: #FFD700; color: #232a2e; border-radius: 7px; padding: 3px 10px; font-weight: 700; margin-right: 4px; }
+.dle-event-risk { margin-left: 6px; font-weight: 700; }
+.dle-attachment { color: #FFD700; margin-left: 8px; font-size: 1.08em; }
+.dle-comment-toggle { background: transparent; border: none; color: #FFD700; margin-left: 10px; font-size: 1.08em; cursor: pointer; display: flex; align-items: center; }
+.dle-event-title { font-size: 1.08em; color: #FFD700; font-weight: 700; margin-bottom: 2px; }
+.dle-event-rationale { color: #fff; font-size: 1.01em; margin-bottom: 3px; }
+.dle-event-followup { color: #FFD700; font-size: 0.98em; margin-top: 2px; display: flex; align-items: center; }
+.dle-empty { color: #FFD700; font-size: 1.09em; text-align: center; padding: 35px 0; }
+.dle-modal-bg { background: rgba(34,36,39,0.91); position: fixed; left: 0; top: 0; width: 100vw; height: 100vh; z-index: 99; display: flex; align-items: center; justify-content: center; }
+.dle-modal-card { background: #232a2e; border-radius: 19px; min-width: 340px; max-width: 440px; padding: 29px 28px 21px 27px; position: relative; box-shadow: 0 2px 18px #FFD70033; }
+.dle-modal-title { font-size: 1.19rem; color: #FFD700; font-weight: 700; margin-bottom: 10px; }
+.dle-modal-form { display: flex; flex-direction: column; gap: 10px; }
+.dle-modal-input { background: #232a2e; color: #FFD700; border: 1px solid #FFD70033; border-radius: 7px; padding: 6px 11px; font-size: 1.01em; font-family: inherit; }
+.dle-modal-add-btn { background: #1de682; color: #232a2e; border-radius: 8px; border: none; font-weight: 700; font-size: 1.01em; padding: 7px 17px; cursor: pointer; }
+.dle-modal-add-btn:hover { background: #FFD700; color: #232a2e; }
+.dle-modal-cancel-btn { background: #FFD700; color: #232a2e; border-radius: 8px; border: none; font-weight: 700; font-size: 1.01em; padding: 7px 17px; cursor: pointer; }
+.dle-footer { margin-top: 28px; font-size: 1.02rem; color: #FFD700; text-align: right; }
+
+.dle-comments-log { background: #232a2e; border-radius: 12px; margin: 10px 0 6px 0; padding: 10px 14px; box-shadow: 0 1px 7px #FFD70018; }
+.dle-comments-head { color: #FFD700; font-weight: 700; margin-bottom: 3px; }
+.dle-comments-log ul { list-style: none; margin: 0 0 5px 0; padding: 0; }
+.dle-comments-log li { font-size: 1em; margin-bottom: 3px; }
+.dle-no-comments { color: #FFD70088; }
+.dle-comment-owner { font-weight: 700; color: #FFD700; margin-right: 7px; }
+.dle-comment-date { color: #1de682; font-size: 0.96em; margin-right: 7px; }
+.dle-comment-text { color: #fff; }
+.dle-comment-add { display: flex; gap: 8px; margin-top: 5px; }
+.dle-comment-input { flex: 2; background: #232a2e; color: #1de682; border: 1px solid #1de68244; border-radius: 7px; padding: 4px 10px; font-size: 1.01em; font-family: inherit; }
+.dle-comment-btn { background: #FFD700; color: #232a2e; border: none; border-radius: 7px; padding: 4px 11px; font-weight: 700; font-size: 1em; cursor: pointer; }
+.dle-comment-btn:hover { background: #1de682; color: #232a2e; }

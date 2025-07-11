@@ -1,0 +1,384 @@
+.hr-main {
+  background: #22272b;
+  color: #fff;
+  border-radius: 28px;
+  box-shadow: 0 7px 38px rgba(24,27,32,0.14);
+  padding: 38px 38px 30px 38px;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 30px 0 44px 0;
+  max-width: 1700px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+.hr-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 22px;
+  margin-bottom: 18px;
+}
+.hr-header h2 {
+  color: #FFD700;
+  font-size: 2.08rem;
+  font-weight: 900;
+  letter-spacing: 1.2px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+.hr-pdf-btn, .hr-csv-btn {
+  background: #232a2e;
+  color: #FFD700;
+  border: 2px solid #FFD700;
+  border-radius: 8px;
+  font-weight: 900;
+  padding: 8px 20px;
+  font-size: 1.06rem;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+.hr-pdf-btn:hover, .hr-csv-btn:hover {
+  background: #FFD700; color: #232a2e;
+}
+.hr-analytics-row {
+  display: flex;
+  gap: 36px;
+  margin-bottom: 30px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.hr-analytics-card {
+  background: #232a2e;
+  color: #FFD700;
+  border-radius: 14px;
+  box-shadow: 0 2px 13px #FFD70013;
+  padding: 14px 22px 10px 22px;
+  min-width: 200px;
+  max-width: 320px;
+}
+.hr-analytics-title {
+  color: #FFD700;
+  font-size: 1.08rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.hr-copilot {
+  background: #232a2e;
+  color: #FFD700;
+  border-radius: 10px;
+  padding: 15px 25px 12px 18px;
+  font-size: 1.09rem;
+  font-weight: 800;
+  min-width: 210px;
+  box-shadow: 0 2px 13px #FFD70011;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.hr-filter-row {
+  margin-bottom: 15px;
+  font-size: 1.07rem;
+  font-weight: 700;
+  color: #FFD700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.hr-filter-row select {
+  background: #283E51;
+  color: #FFD700;
+  border-radius: 7px;
+  border: none;
+  padding: 7px 12px;
+  font-size: 1.04rem;
+  font-weight: 700;
+}
+
+/* --- Staff/HR Grid --- */
+.hr-grid {
+  margin-bottom: 19px;
+  border-radius: 14px;
+  background: #232a2e;
+  box-shadow: 0 2px 13px #FFD70013;
+  overflow-x: auto;
+  font-size: 1.06rem;
+}
+.hr-grid-header {
+  background: #283E51;
+  color: #FFD700;
+  font-weight: 900;
+  font-size: 1.09rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.hr-grid-row {
+  display: grid;
+  grid-template-columns: 210px 140px 100px 150px 140px 100px 110px 160px 120px;
+  align-items: center;
+  border-bottom: 1px solid #b7bec91c;
+  padding: 8px 9px;
+  font-size: 1.06rem;
+  transition: background 0.12s;
+}
+.hr-empty {
+  color: #b7bec9;
+  font-size: 1.09rem;
+  text-align: center;
+  grid-column: 1/-1;
+}
+.hr-user-icon {
+  margin-right: 7px;
+  color: #FFD700;
+  font-size: 1.11rem;
+  vertical-align: middle;
+}
+.hr-contract-badge {
+  font-size: 0.99rem;
+  font-weight: 900;
+  background: #283E51;
+  border-radius: 7px;
+  padding: 2px 9px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  border: 2px solid #FFD70033;
+  color: #FFD700;
+}
+.hr-contract-expiring { border-color: #FFD700; color: #FFD700; }
+.hr-contract-expired { border-color: #f35650; color: #f35650; }
+.hr-contract-ok { border-color: #35b378; color: #35b378;}
+.hr-compl-badge {
+  font-size: 0.97rem;
+  font-weight: 900;
+  background: #b7bec933;
+  border-radius: 7px;
+  padding: 2px 11px;
+  margin-left: 4px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.hr-risk-badge {
+  font-size: 0.97rem;
+  font-weight: 900;
+  background: #b7bec933;
+  border-radius: 7px;
+  padding: 2px 11px;
+  margin-left: 4px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.hr-tag {
+  background: #FFD700;
+  color: #232a2e;
+  font-size: 0.98rem;
+  font-weight: 900;
+  border-radius: 6px;
+  padding: 2px 10px;
+  margin-right: 2px;
+}
+.hr-detail-btn {
+  background: #232a2e;
+  color: #FFD700;
+  border-radius: 7px;
+  border: 2px solid #FFD700;
+  font-size: 1.01rem;
+  font-weight: 900;
+  padding: 3px 13px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+.hr-detail-btn:hover {
+  background: #FFD700; color: #232a2e;
+}
+
+/* --- Modal Overlay --- */
+.hr-modal-overlay {
+  position: fixed;
+  left: 0; top: 0; width: 100vw; height: 100vh;
+  background: rgba(34,39,43,0.94);
+  z-index: 4000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hr-modal {
+  background: #232a2e;
+  color: #FFD700;
+  border-radius: 23px;
+  box-shadow: 0 7px 38px #FFD70022;
+  padding: 34px 44px 19px 44px;
+  min-width: 480px;
+  max-width: 780px;
+  font-size: 1.13rem;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+.hr-modal-header {
+  font-size: 1.21rem;
+  color: #FFD700;
+  font-weight: 900;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+.hr-modal-close {
+  margin-left: auto;
+  font-size: 2.1rem;
+  color: #FFD700;
+  background: none;
+  border: none;
+  cursor: pointer;
+  opacity: 0.84;
+}
+.hr-modal-status-row {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+.hr-modal-title {
+  color: #FFD700;
+  font-weight: 900;
+  margin-bottom: 3px;
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.hr-timeline {
+  margin: 0 0 8px 0;
+}
+.hr-timeline-row {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  margin-bottom: 6px;
+  background: #283E51;
+  color: #FFD700;
+  border-radius: 7px;
+  padding: 6px 15px;
+  font-weight: 900;
+  border-left: 6px solid #FFD700;
+}
+.hr-timeline-date { color: #b7bec9; font-size: 0.98rem; min-width: 82px; }
+.hr-timeline-ic { font-size: 1.18rem; }
+.hr-timeline-label { font-size: 1.03rem; color: #FFD700;}
+.hr-cred-list, .hr-hist-list {
+  list-style: none;
+  padding: 0; margin: 7px 0 0 0;
+}
+.hr-cred-list li, .hr-hist-list li {
+  color: #FFD700;
+  font-size: 1.01rem;
+  font-weight: 900;
+  margin-bottom: 2px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.hr-eval-row {
+  margin-bottom: 7px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  background: #283E51;
+  border-radius: 8px;
+  padding: 7px 14px;
+  color: #FFD700;
+  font-size: 1.06rem;
+}
+.hr-eval-doc {
+  background: #FFD700;
+  color: #232a2e;
+  font-weight: 900;
+  border-radius: 7px;
+  padding: 2px 11px;
+  margin-left: 18px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.hr-modal-notes-list {
+  background: #232a2e;
+  border-radius: 9px;
+  padding: 8px 17px 7px 17px;
+  margin-bottom: 7px;
+  margin-top: 3px;
+}
+.hr-modal-note {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 1.01rem;
+  color: #FFD700;
+  margin-bottom: 4px;
+}
+.hr-modal-note-date { color: #b7bec9; font-size: 0.98rem;}
+.hr-modal-note-user { color: #35b378; font-size: 1.01rem;}
+.hr-modal-note-text { color: #FFD700; font-size: 1.01rem; }
+.hr-addnote-btn {
+  background: #232a2e;
+  color: #FFD700;
+  border: 2px solid #FFD700;
+  border-radius: 7px;
+  font-size: 0.98rem;
+  font-weight: 900;
+  padding: 3px 13px;
+  margin-left: 5px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+.hr-addnote-btn:hover {
+  background: #FFD700; color: #232a2e;
+}
+.hr-modal-copilot {
+  margin-top: 14px;
+  font-size: 1.08rem;
+  font-weight: 900;
+  color: #FFD700;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #283E51;
+  border-radius: 7px;
+  padding: 8px 19px;
+}
+.hr-tagline {
+  margin-top: 44px;
+  text-align: center;
+  color: #FFD700;
+  font-size: 1.13rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  opacity: 0.81;
+  margin-bottom: 5px;
+}
+.hr-tagline-sticky {
+  position: absolute;
+  left: 36px;
+  bottom: 12px;
+  font-size: 1.09rem;
+  font-weight: 900;
+  opacity: 0.74;
+}
+@media (max-width: 1100px) {
+  .hr-grid-row {
+    grid-template-columns: 140px 85px 65px 90px 90px 70px 80px 80px 80px;
+    font-size: 0.95rem;
+  }
+  .hr-modal { min-width: 97vw; padding: 24px 9vw 18px 9vw;}
+}

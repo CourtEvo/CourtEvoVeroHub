@@ -1,0 +1,38 @@
+/* src/components/StrategicAlignmentDashboard.css */
+
+.sad-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sad-header h2 {
+  margin: 0;
+  color: #FFD700;
+  font-size: 24px;
+}
+.download-btn {
+  background: #1de682;
+  color: #23292f;
+  border: none;
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+.metric-toggle {
+  margin: 0 12px 0 0;
+  color: #fff;
+  font-size: 14px;
+}
+.subtext {
+  margin: 8px 0 16px;
+  color: #1de682;
+}
+.chart-container {
+  background: #232a2e;
+  padding: 12px;
+  border-radius: 12px;
+}

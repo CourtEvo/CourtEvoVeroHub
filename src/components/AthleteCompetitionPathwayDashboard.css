@@ -1,0 +1,5 @@
+table { border-collapse: collapse; width: 100%; font-family: 'Segoe UI', sans-serif; }
+th, td { padding: 9px 10px; }
+tbody tr:hover { background: #FFD70033; }
+::-webkit-scrollbar-thumb { background: #FFD70099; border-radius: 7px; }
+::-webkit-scrollbar { width: 8px; background: #232a2e; }

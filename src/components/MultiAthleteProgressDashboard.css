@@ -1,0 +1,109 @@
+.mapd-root { background: #232a2e; color: #fff; font-family: 'Segoe UI', sans-serif; border-radius: 22px; box-shadow: 0 2px 18px 0 #232a2e60; padding: 32px 36px 28px 36px; margin: 24px auto; max-width: 1720px; }
+.mapd-header { display: flex; align-items: center; gap: 28px; margin-bottom: 18px; }
+.mapd-title { font-size: 2.07rem; font-weight: bold; letter-spacing: 2px; color: #FFD700; }
+.mapd-sub { font-size: 1.1rem; color: #1de682; margin-left: 16px; font-weight: 600; flex: 1; }
+.mapd-export-btn { background: #FFD700; color: #232a2e; font-weight: 700; border-radius: 15px; border: none; padding: 10px 22px; font-size: 1.08rem; margin-left: auto; cursor: pointer; box-shadow: 0 2px 7px #FFD70033; transition: background 0.13s; }
+.mapd-export-btn:hover { background: #1de682; color: #232a2e; }
+
+.mapd-athlete-list-wrap { margin-bottom: 20px; }
+.mapd-list-controls { display: flex; align-items: center; gap: 24px; margin-bottom: 6px; }
+.mapd-list-search { background: #232a2e; color: #FFD700; border-radius: 10px; display: flex; align-items: center; padding: 3px 12px; }
+.mapd-list-input { background: #232a2e; color: #FFD700; border: none; outline: none; font-size: 1.02em; width: 160px; }
+.mapd-list-select { background: #232a2e; color: #FFD700; border-radius: 9px; font-size: 1.01em; border: 1px solid #FFD70033; padding: 2px 16px; }
+.mapd-athlete-list { display: flex; gap: 18px; flex-wrap: wrap; margin-top: 3px; }
+.mapd-athlete-card { background: #202427; border-radius: 11px; padding: 16px 20px 13px 16px; min-width: 210px; cursor: pointer; transition: box-shadow 0.13s, border 0.11s; border: 2px solid transparent; display: flex; flex-direction: column; gap: 3px; }
+.mapd-athlete-card.selected { border: 2px solid #FFD700; box-shadow: 0 2px 12px #FFD7000c; }
+.mapd-athlete-name { font-size: 1.11em; color: #FFD700; font-weight: 700; }
+.mapd-athlete-squad { color: #1de682; font-size: 0.97em; }
+.mapd-athlete-status { background: #FFD70022; color: #FFD700; border-radius: 8px; font-size: 0.99em; padding: 2px 8px; margin-top: 2px; }
+.mapd-athlete-status.PromotionReady { background: #1de68244; color: #1de682; }
+.mapd-athlete-readiness { font-weight: 700; color: #FFD700; font-size: 1em; }
+.mapd-athlete-readiness-bar { background: #31373b; border-radius: 7px; height: 11px; width: 95px; margin-top: 2px; position: relative; }
+.mapd-athlete-readiness-bar > div { height: 100%; border-radius: 7px; transition: width 0.24s, background 0.18s; }
+.mapd-athlete-delta { font-size: 1.05em; margin-top: 2px; margin-left: 7px; }
+
+.mapd-athlete-dash { margin-top: 15px; }
+.mapd-main-split { display: flex; gap: 38px; margin-bottom: 17px; }
+.mapd-profile-col { flex: 1.15 1 325px; }
+.mapd-center-col { flex: 1.5 1 440px; }
+.mapd-right-col { flex: 1 1 330px; }
+
+.mapd-profile-card { background: #202427; border-radius: 14px; box-shadow: 0 2px 10px #FFD70013; padding: 20px 26px 13px 17px; min-width: 230px; min-height: 210px; display: flex; flex-direction: column; align-items: flex-start; }
+.mapd-profile-row { display: flex; align-items: center; gap: 12px; font-size: 1.07rem; margin-bottom: 5px; }
+.mapd-label { font-weight: 700; color: #FFD700; min-width: 98px; }
+.mapd-value { color: #fff; font-weight: 600; }
+.mapd-status-chip, .mapd-risk-chip { font-size: 0.98rem; border-radius: 9px; font-weight: 700; padding: 4px 13px; margin-left: 7px; }
+.mapd-chip { font-size: 0.97rem; border-radius: 9px; font-weight: 700; padding: 3px 11px; margin-left: 5px; }
+.mapd-chip.strength { background: #1de68222; }
+.mapd-chip.risk { background: #FF4444; color: #fff; }
+.mapd-score-row { align-items: baseline; margin-top: 8px; margin-bottom: 4px; }
+.mapd-score-main { color: #FFD700; font-size: 1.25em; font-weight: 800; }
+.mapd-score-arrow { font-size: 1.24em; margin-left: 8px; }
+.mapd-score-delta { font-size: 1.02em; font-weight: 700; padding: 3px 10px; border-radius: 9px; margin-left: 8px; }
+.mapd-sensitive-alert { background: #FFD70033; color: #FFD700; font-weight: 700; border-radius: 8px; padding: 7px 13px; margin-top: 10px; font-size: 0.97rem; display: flex; align-items: center; }
+
+.mapd-trendlines-card { background: #232a2e; border-radius: 12px; padding: 13px 13px 8px 13px; margin-top: 13px; box-shadow: 0 1px 6px #FFD70018; }
+.mapd-trendline-title { color: #FFD700; font-weight: 700; margin-top: 7px; margin-bottom: 2px; }
+.mapd-trendline-spark { display: flex; align-items: flex-end; height: 22px; width: 74px; margin-bottom: 2px; }
+
+.mapd-notes-section { background: #232a2e; border-radius: 12px; box-shadow: 0 1px 7px #FFD70014; padding: 13px 10px 8px 13px; margin-top: 14px; }
+.mapd-notes-head { color: #FFD700; font-weight: 700; font-size: 1.05rem; margin-bottom: 3px; }
+.mapd-notes-filters { margin-bottom: 3px; }
+.mapd-notes-type { background: #232a2e; color: #FFD700; border-radius: 7px; font-size: 1.01em; border: 1px solid #FFD70033; padding: 2px 11px; }
+.mapd-notes-new { display: flex; gap: 9px; margin-bottom: 7px; }
+.mapd-notes-input { flex: 2; background: #232a2e; color: #1de682; border: 1px solid #1de68244; border-radius: 7px; padding: 4px 10px; font-size: 1.01em; font-family: inherit; }
+.mapd-notes-btn { background: #FFD700; color: #232a2e; border: none; border-radius: 8px; padding: 4px 13px; font-weight: 700; font-size: 1.01em; cursor: pointer; }
+.mapd-note-initials { border-radius: 50%; font-weight: 700; background: #FFD700; color: #232a2e; padding: 4px 10px; margin-right: 5px; }
+.mapd-notes-section ul { list-style: none; margin: 0; padding: 0; }
+.mapd-notes-section li { margin-bottom: 6px; font-size: 1.03em; display: flex; align-items: center; }
+.mapd-note-date { color: #FFD700; font-weight: 700; margin-right: 8px; }
+.mapd-note-author { color: #1de682; font-weight: 700; margin-right: 7px; }
+.mapd-note-text { color: #fff; }
+
+.mapd-radar-card { background: #202427; border-radius: 12px; padding: 15px 12px 10px 12px; margin-bottom: 7px; box-shadow: 0 1px 7px #FFD70018; min-width: 230px; }
+.mapd-radar-label { color: #FFD700; font-weight: 700; margin-bottom: 5px; }
+.mapd-radar-legend { margin-bottom: 5px; }
+.mapd-radar-legend-chip { display: inline-block; padding: 4px 12px; border-radius: 9px; font-weight: 700; font-size: 0.98em; margin-right: 5px; }
+
+.mapd-sparkline-card { background: #202427; border-radius: 12px; padding: 15px 18px 10px 14px; margin-bottom: 8px; box-shadow: 0 1px 7px #FFD70018; }
+.mapd-spark-label { color: #FFD700; font-weight: 700; margin-bottom: 3px; }
+.mapd-sparkline { display: flex; align-items: flex-end; height: 36px; width: 130px; }
+
+.mapd-milestone-section { background: #232a2e; border-radius: 12px; box-shadow: 0 1px 7px #FFD70014; padding: 14px 18px 7px 15px; margin-bottom: 12px; }
+.mapd-milestone-head { color: #FFD700; font-weight: 700; font-size: 1.06rem; margin-bottom: 5px; }
+.mapd-timeline-vertical { border-left: 3px solid #FFD70044; margin-left: 19px; }
+.mapd-timeline-event { position: relative; margin-bottom: 13px; display: flex; align-items: center; }
+.mapd-timeline-dot { position: absolute; left: -25px; top: 8px; width: 15px; height: 15px; border-radius: 50%; background: #FFD700; border: 3px solid #232a2e; }
+.mapd-timeline-date { color: #FFD700; font-weight: 700; margin-right: 7px; }
+.mapd-timeline-type { background: #1de68222; color: #1de682; border-radius: 7px; padding: 2px 10px; font-weight: 700; margin-right: 7px; }
+.mapd-timeline-event.injury .mapd-timeline-type { background: #FF4444; color: #fff; }
+.mapd-timeline-event.award .mapd-timeline-type { background: #FFD700; color: #232a2e; }
+.mapd-timeline-text { color: #fff; }
+
+.mapd-ai-panel { background: #232a2e; border-radius: 11px; margin-bottom: 14px; padding: 15px 19px 10px 19px; }
+.mapd-ai-btn { background: #FFD700; color: #232a2e; border: none; border-radius: 8px; padding: 7px 17px; font-weight: 700; font-size: 1.06em; margin-bottom: 9px; cursor: pointer; }
+.mapd-ai-btn:hover { background: #1de682; color: #232a2e; }
+.mapd-ai-output { background: #232a2e; border-radius: 11px; margin: 7px 0 4px 0; padding: 10px 15px; box-shadow: 0 1px 7px #1de68238; color: #FFD700; font-size: 1.01em; white-space: pre-wrap; }
+
+.mapd-action-section { background: #232a2e; border-radius: 12px; box-shadow: 0 1px 7px #FFD70014; padding: 15px 18px 12px 18px; }
+.mapd-action-head { color: #FFD700; font-weight: 700; font-size: 1.06rem; margin-bottom: 6px; }
+.mapd-action-list { margin-bottom: 7px; }
+.mapd-action-item { display: flex; align-items: center; gap: 8px; margin-bottom: 4px; font-size: 1.02em; }
+.mapd-action-date { color: #FFD700; font-weight: 700; }
+.mapd-action-text { color: #fff; }
+.mapd-action-owner { background: #FFD70022; color: #FFD700; border-radius: 8px; font-size: 0.98em; font-weight: 700; padding: 2px 10px; margin-left: 5px; }
+.mapd-action-new { display: flex; gap: 9px; margin-top: 7px; }
+.mapd-action-input { flex: 2; background: #232a2e; color: #1de682; border: 1px solid #1de68244; border-radius: 7px; padding: 4px 10px; font-size: 1.01em; font-family: inherit; }
+.mapd-action-select { background: #232a2e; color: #FFD700; border: 1px solid #FFD70033; border-radius: 7px; padding: 4px 8px; font-size: 1.01em; font-family: inherit; }
+.mapd-action-btn { background: #FFD700; color: #232a2e; border: none; border-radius: 8px; padding: 4px 13px; font-weight: 700; font-size: 1.01em; cursor: pointer; }
+.mapd-action-btn:hover { background: #1de682; color: #232a2e; }
+
+.mapd-journey-row { margin-top: 22px; }
+.mapd-journey-title { font-size: 1.13rem; color: #FFD700; font-weight: 700; margin-bottom: 7px; }
+.mapd-journey-bar { display: flex; gap: 34px; align-items: flex-start; }
+.mapd-journey-point { display: flex; flex-direction: column; align-items: center; position: relative; }
+.mapd-journey-dot { width: 17px; height: 17px; border-radius: 50%; background: #FFD700; border: 2.5px solid #232a2e; margin-bottom: 4px; }
+.mapd-journey-year { color: #FFD700; font-weight: 700; margin-bottom: 1px; }
+.mapd-journey-event { color: #fff; font-size: 1.01em; text-align: center; min-width: 90px; }
+
+.mapd-footer { margin-top: 28px; font-size: 1.02rem; color: #FFD700; text-align: right; }

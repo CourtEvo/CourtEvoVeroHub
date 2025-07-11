@@ -1,0 +1,458 @@
+.cam-main {
+  background: #22272b;
+  color: #fff;
+  border-radius: 28px;
+  box-shadow: 0 7px 38px rgba(24,27,32,0.17);
+  padding: 38px 38px 30px 38px;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 32px 0 42px 0;
+  max-width: 1700px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+.cam-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 22px;
+  margin-bottom: 19px;
+}
+.cam-header h2 {
+  color: #FFD700;
+  font-size: 2.20rem;
+  font-weight: 900;
+  letter-spacing: 1.3px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+.cam-org-select {
+  background: #2b3238;
+  color: #FFD700;
+  font-size: 1.04rem;
+  font-weight: 800;
+  border-radius: 7px;
+  border: 2px solid #FFD700;
+  padding: 6px 16px;
+  margin-right: 12px;
+}
+.cam-pdf-btn, .cam-add-btn {
+  background: #232a2e;
+  color: #FFD700;
+  border: 2px solid #FFD700;
+  border-radius: 8px;
+  font-weight: 900;
+  padding: 7px 19px;
+  font-size: 1.06rem;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+.cam-pdf-btn:hover, .cam-add-btn:hover {
+  background: #FFD700; color: #232a2e;
+}
+
+.cam-analytics-bar {
+  background: #232a2e;
+  border-radius: 13px;
+  box-shadow: 0 2px 11px #283E5133;
+  padding: 16px 23px 10px 23px;
+  margin-bottom: 22px;
+  width: 420px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.cam-analytics-title {
+  color: #FFD700;
+  font-size: 1.09rem;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cam-copilot-card {
+  background: #232a2e;
+  border-radius: 13px;
+  box-shadow: 0 2px 11px #283E5133;
+  padding: 16px 22px 13px 22px;
+  margin-bottom: 22px;
+  width: 500px;
+  max-width: 100%;
+}
+.cam-copilot-title {
+  color: #FFD700;
+  font-size: 1.09rem;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+  margin-bottom: 7px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.cam-copilot-col {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.cam-copilot-actions {
+  margin-top: 6px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.cam-copilot-btn {
+  background: #232a2e;
+  color: #35b378;
+  border-radius: 7px;
+  border: 2px solid #35b378;
+  font-size: 1.02rem;
+  font-weight: 900;
+  padding: 5px 16px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.13s;
+}
+.cam-copilot-btn:hover { background: #35b378; color: #232a2e; }
+
+.cam-filter-row {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  background: #283E51;
+  border-radius: 11px;
+  padding: 10px 18px;
+  margin-bottom: 24px;
+  font-size: 1.09rem;
+}
+.cam-filter-row select {
+  background: #2b3238;
+  color: #FFD700;
+  font-size: 1.01rem;
+  font-weight: 700;
+  border-radius: 6px;
+  border: none;
+  padding: 6px 12px;
+}
+
+.cam-planner-grid {
+  margin-bottom: 23px;
+  border-radius: 14px;
+  background: #232a2e;
+  box-shadow: 0 2px 11px #283E5133;
+  overflow-x: auto;
+}
+.cam-planner-header {
+  background: #283E51;
+  color: #FFD700;
+  font-weight: 900;
+  font-size: 1.09rem;
+}
+.cam-planner-row {
+  display: grid;
+  grid-template-columns: 120px 320px 145px 110px 120px 125px 85px;
+  align-items: center;
+  border-bottom: 1px solid #b7bec91c;
+  padding: 8px 9px;
+  font-size: 1.05rem;
+}
+.cam-planner-msg { cursor:pointer; text-decoration:underline; color:#FFD700;}
+.cam-empty {
+  color: #b7bec9;
+  font-size: 1.09rem;
+  text-align: center;
+  grid-column: 1/-1;
+}
+.cam-edit-btn, .cam-dup-btn {
+  background: none;
+  border: none;
+  color: #FFD700;
+  font-size: 1.13rem;
+  margin-left: 8px;
+  cursor: pointer;
+  transition: color 0.15s;
+}
+.cam-edit-btn:hover, .cam-dup-btn:hover { color: #35b378; }
+
+.cam-badge {
+  font-size: 0.97rem;
+  font-weight: 900;
+  background: #b7bec933;
+  border-radius: 7px;
+  padding: 2px 12px;
+  margin-left: 6px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* --- Announcement Calendar --- */
+.cam-calendar-card {
+  background: #232a2e;
+  border-radius: 13px;
+  box-shadow: 0 2px 11px #283E5133;
+  padding: 18px 23px 11px 23px;
+  margin-bottom: 18px;
+  max-width: 1200px;
+}
+.cam-calendar-title {
+  color: #FFD700;
+  font-size: 1.11rem;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.cam-calendar-title input[type="month"] {
+  background: #2b3238;
+  color: #FFD700;
+  font-weight: 700;
+  border-radius: 6px;
+  border: none;
+  font-size: 1.01rem;
+  padding: 6px 12px;
+  margin-left: 8px;
+}
+.cam-calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(95px, 1fr));
+  gap: 8px;
+}
+.cam-calendar-day {
+  background: #283E51;
+  border-radius: 10px;
+  min-height: 66px;
+  padding: 7px 7px 5px 7px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 1.04rem;
+  margin-bottom: 3px;
+}
+.cam-calendar-date {
+  color: #FFD700;
+  font-weight: 900;
+  font-size: 1.17rem;
+  margin-bottom: 3px;
+}
+.cam-calendar-item {
+  background: #2b3238;
+  border-radius: 7px;
+  padding: 4px 7px;
+  font-size: 0.99rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+  color: #FFD700;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.cam-status-scheduled { background: #35b37822 !important; }
+.cam-status-sent { background: #FFD70022 !important; }
+.cam-status-overdue { background: #f3565022 !important; }
+.cam-status-urgent { background: #f2a90022 !important; }
+.cam-calendar-msg {
+  color: #fff;
+  margin-left: 5px;
+}
+
+/* --- Group Mapping --- */
+.cam-mapping-card {
+  background: #232a2e;
+  border-radius: 13px;
+  box-shadow: 0 2px 11px #283E5133;
+  padding: 15px 24px 9px 24px;
+  margin-bottom: 19px;
+  max-width: 700px;
+}
+.cam-mapping-title {
+  color: #FFD700;
+  font-size: 1.09rem;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.cam-mapping-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.cam-mapping-row {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+.cam-mapping-aud {
+  color: #FFD700;
+  font-weight: 900;
+  font-size: 1.07rem;
+  min-width: 90px;
+}
+.cam-mapping-cell {
+  font-size: 1.18rem;
+  background: #b7bec966;
+  color: #232a2e;
+  border-radius: 6px;
+  padding: 1px 12px;
+  margin-right: 2px;
+}
+.cam-green { background: #35b378 !important; color: #fff !important; }
+.cam-red { background: #f35650 !important; color: #fff !important; }
+.cam-mapping-alert {
+  margin-top: 8px;
+  color: #FFD700;
+  font-weight: 800;
+  font-size: 1.03rem;
+}
+
+/* --- Modal --- */
+.cam-modal-overlay {
+  position: fixed;
+  left: 0; top: 0; width: 100vw; height: 100vh;
+  background: rgba(34,39,43,0.97);
+  z-index: 3000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cam-modal {
+  background: #232a2e;
+  color: #FFD700;
+  border-radius: 19px;
+  box-shadow: 0 7px 38px #FFD70017;
+  padding: 30px 34px 19px 34px;
+  min-width: 430px;
+  max-width: 690px;
+  font-size: 1.11rem;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.cam-modal-header {
+  font-size: 1.18rem;
+  color: #FFD700;
+  font-weight: 900;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+.cam-modal-close {
+  margin-left: auto;
+  font-size: 2.1rem;
+  color: #FFD700;
+  background: none;
+  border: none;
+  cursor: pointer;
+  opacity: 0.84;
+}
+.cam-modal-row {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.cam-modal label {
+  font-size: 1.07rem;
+  font-weight: 900;
+  color: #b7bec9;
+  margin-right: 5px;
+}
+.cam-modal input[type="text"], .cam-modal input[type="number"], .cam-modal select, .cam-modal input[type="date"] {
+  background: #2b3238;
+  color: #FFD700;
+  border-radius: 6px;
+  border: none;
+  padding: 6px 12px;
+  font-size: 1.01rem;
+  font-weight: 700;
+}
+.cam-modal-aud-btn {
+  background: #2b3238;
+  color: #FFD700;
+  border-radius: 6px;
+  border: 2px solid #FFD700;
+  font-size: 0.99rem;
+  font-weight: 900;
+  padding: 4px 12px;
+  margin-right: 5px;
+  cursor: pointer;
+  transition: background 0.12s, color 0.12s;
+}
+.cam-modal-aud-on, .cam-modal-aud-btn:active, .cam-modal-aud-btn:focus {
+  background: #FFD700 !important;
+  color: #232a2e !important;
+}
+.cam-modal-actions {
+  margin-top: 16px;
+  text-align: center;
+}
+.cam-modal-actions .cam-pdf-btn {
+  font-size: 1.09rem;
+  font-weight: 900;
+}
+
+/* --- Board Log --- */
+.cam-boardlog-panel {
+  background: #232a2e;
+  border-radius: 13px;
+  box-shadow: 0 2px 13px #FFD70012;
+  padding: 17px 19px 10px 19px;
+  margin-top: 15px;
+  margin-bottom: 9px;
+  max-width: 1100px;
+}
+.cam-boardlog-title {
+  color: #FFD700;
+  font-size: 1.13rem;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  margin-bottom: 7px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.cam-boardlog-list {
+  font-size: 1.03rem;
+  color: #b7bec9;
+  font-weight: 700;
+}
+.cam-log-empty {
+  font-size: 1.01rem;
+  color: #b7bec9;
+  opacity: 0.65;
+  margin-top: 6px;
+}
+.cam-log-entry {
+  padding: 3px 0;
+  display: flex;
+  gap: 18px;
+  border-bottom: 1px solid #b7bec911;
+  align-items: center;
+  font-size: 1.01rem;
+}
+.cam-log-time { color: #FFD700; font-size: 0.97rem; margin-right: 2px; font-weight: 800;}
+.cam-log-user { color: #35b378; font-size: 1.01rem;}
+.cam-log-action { color: #f2a900; font-size: 1.01rem;}
+.cam-log-title { color: #fff; font-size: 1.01rem; font-weight: 700;}
+
+.cam-tagline {
+  margin-top: 44px;
+  text-align: center;
+  color: #FFD700;
+  font-size: 1.15rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  opacity: 0.81;
+  margin-bottom: 5px;
+}

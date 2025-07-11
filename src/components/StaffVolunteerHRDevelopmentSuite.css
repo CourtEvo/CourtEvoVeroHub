@@ -1,0 +1,478 @@
+.svhr-main {
+  background: #22272b;
+  color: #fff;
+  border-radius: 28px;
+  box-shadow: 0 7px 38px rgba(24,27,32,0.17);
+  padding: 38px 38px 30px 38px;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 32px 0 42px 0;
+  max-width: 1700px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+/* --- Succession Grid --- */
+.svhr-succession-grid {
+  background: #232a2e;
+  border-radius: 13px;
+  box-shadow: 0 2px 13px #FFD70011;
+  padding: 20px 18px 13px 18px;
+  margin-bottom: 26px;
+  max-width: 1100px;
+}
+.svhr-succession-title {
+  font-size: 1.13rem;
+  color: #FFD700;
+  font-weight: 900;
+  margin-bottom: 11px;
+  letter-spacing: 0.5px;
+}
+.svhr-succession-grid table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1.01rem;
+  margin-bottom: 2px;
+}
+.svhr-succession-grid th, .svhr-succession-grid td {
+  border-bottom: 1px solid #b7bec922;
+  padding: 7px 7px;
+  text-align: left;
+}
+.svhr-succession-grid th {
+  background: #283E51;
+  color: #FFD700;
+  font-weight: 900;
+}
+.svhr-succession-badge {
+  border-radius: 8px;
+  padding: 3px 15px;
+  font-size: 0.98rem;
+  font-weight: 900;
+  background: #b7bec933;
+  color: #fff;
+}
+.svhr-green { background: #35b378; color: #fff; }
+.svhr-yellow { background: #FFD700; color: #232a2e; }
+.svhr-red { background: #f35650; color: #fff; }
+
+/* --- Bench Strength --- */
+.svhr-benchdashboard-row {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 17px;
+}
+.svhr-bench-card {
+  background: #232a2e;
+  border-radius: 12px;
+  box-shadow: 0 2px 11px #283E5133;
+  padding: 12px 13px 8px 13px;
+  min-width: 180px;
+  text-align: center;
+  font-weight: 900;
+  font-size: 1.04rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.svhr-bench-title {
+  color: #FFD700;
+  margin-bottom: 4px;
+  font-size: 1.07rem;
+}
+.svhr-bench-bar {
+  font-size: 1.04rem;
+  font-weight: 900;
+  letter-spacing: 0.2px;
+}
+
+/* --- Compliance Heatmap --- */
+.svhr-heatmap-card {
+  background: #232a2e;
+  border-radius: 13px;
+  box-shadow: 0 2px 11px #283E5133;
+  padding: 15px 24px 10px 24px;
+  margin-bottom: 18px;
+  max-width: 980px;
+}
+.svhr-heatmap-title {
+  color: #FFD700;
+  font-size: 1.09rem;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+  margin-bottom: 11px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.svhr-heatmap-alert {
+  margin-top: 6px;
+  font-size: 1.01rem;
+  color: #FFD700;
+  font-weight: 800;
+}
+
+/* --- Microdashboard --- */
+.svhr-microdashboard-row {
+  display: flex;
+  gap: 17px;
+  margin-bottom: 19px;
+}
+.svhr-microdashboard-card {
+  background: #232a2e;
+  border-radius: 13px;
+  box-shadow: 0 2px 11px #283E5133;
+  padding: 13px 17px 7px 17px;
+  min-width: 120px;
+  align-items: center;
+  text-align: center;
+  font-weight: 800;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.svhr-microdashboard-title {
+  color: #FFD700;
+  font-size: 1.04rem;
+  font-weight: 900;
+  margin-bottom: 3px;
+}
+.svhr-microdashboard-value {
+  font-size: 1.32rem;
+  font-weight: 900;
+  margin-bottom: 1px;
+  color: #FFD700;
+}
+
+.svhr-analytics-card {
+  background: #232a2e;
+  border-radius: 13px;
+  box-shadow: 0 2px 11px #283E5133;
+  padding: 18px 22px 13px 22px;
+  margin-bottom: 22px;
+  width: 450px;
+  max-width: 100%;
+}
+.svhr-analytics-title {
+  color: #FFD700;
+  font-size: 1.09rem;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+  margin-bottom: 7px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.svhr-copilot-col {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.svhr-copilot-actions {
+  margin-top: 6px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.svhr-copilot-btn {
+  background: #232a2e;
+  color: #35b378;
+  border-radius: 7px;
+  border: 2px solid #35b378;
+  font-size: 1.02rem;
+  font-weight: 900;
+  padding: 5px 15px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.13s;
+}
+.svhr-copilot-btn:hover { background: #35b378; color: #232a2e; }
+
+.svhr-filter-row {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  background: #283E51;
+  border-radius: 11px;
+  padding: 10px 18px;
+  margin-bottom: 24px;
+  font-size: 1.09rem;
+}
+.svhr-filter-row select {
+  background: #2b3238;
+  color: #FFD700;
+  font-size: 1.01rem;
+  font-weight: 700;
+  border-radius: 6px;
+  border: none;
+  padding: 6px 12px;
+}
+
+.svhr-staff-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  gap: 28px;
+  margin-bottom: 34px;
+}
+.svhr-empty {
+  font-size: 1.17rem;
+  color: #f35650;
+  text-align: center;
+  grid-column: 1/-1;
+  padding: 36px 0;
+  background: #232a2e;
+  border-radius: 13px;
+}
+.svhr-card {
+  background: #2b3238;
+  border-radius: 13px;
+  box-shadow: 0 2px 11px #283E5133;
+  padding: 18px 19px 12px 19px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 260px;
+  font-size: 1.04rem;
+  font-weight: 700;
+  border: 2px solid #FFD70018;
+  transition: border 0.13s, box-shadow 0.13s;
+  position: relative;
+}
+.svhr-flagged { border: 2.5px solid #f35650 !important; }
+.svhr-card-header {
+  font-size: 1.15rem;
+  font-weight: 900;
+  color: #FFD700;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 5px;
+  flex-wrap: wrap;
+}
+.svhr-avatar {
+  font-size: 2.26rem;
+  color: #35b378;
+  margin-right: 7px;
+  margin-top: -3px;
+}
+.svhr-card-name {
+  font-weight: 900;
+  font-size: 1.15rem;
+  color: #FFD700;
+  margin-right: 7px;
+}
+.svhr-card-role {
+  color: #b7bec9;
+  font-weight: 800;
+  font-size: 1.05rem;
+  margin-left: 2px;
+}
+.svhr-badge {
+  font-size: 0.98rem;
+  font-weight: 900;
+  background: #b7bec933;
+  border-radius: 7px;
+  padding: 2px 12px;
+  margin-left: 7px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.svhr-flag-btn {
+  background: none;
+  border: none;
+  margin-left: 7px;
+  cursor: pointer;
+  font-size: 1.16rem;
+  opacity: 0.83;
+  transition: color 0.14s;
+}
+.svhr-card-row {
+  color: #b7bec9;
+  font-size: 1.02rem;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+.svhr-comp-matrix {
+  margin-top: 7px;
+  margin-bottom: 7px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+.svhr-comp {
+  border-radius: 8px;
+  padding: 2px 10px;
+  font-weight: 900;
+  font-size: 0.99rem;
+  color: #fff;
+  background: #b7bec9;
+  cursor: pointer;
+  transition: background 0.14s;
+}
+.svhr-green { background: #35b378 !important; color: #fff !important;}
+.svhr-yellow { background: #FFD700 !important; color: #232a2e !important;}
+.svhr-red { background: #f35650 !important; color: #fff !important;}
+
+.svhr-card-log {
+  font-size: 0.97rem;
+  color: #35b378;
+  background: #232a2e;
+  border-radius: 7px;
+  padding: 3px 8px;
+  margin-top: 2px;
+  margin-bottom: 3px;
+}
+.svhr-card-actions {
+  margin-top: 7px;
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  justify-content: flex-end;
+}
+.svhr-edit-btn, .svhr-log-btn {
+  background: #232a2e;
+  color: #FFD700;
+  border-radius: 7px;
+  border: 2px solid #FFD700;
+  padding: 5px 15px;
+  font-weight: 800;
+  font-size: 1.01rem;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+.svhr-edit-btn:hover, .svhr-log-btn:hover { background: #FFD700; color: #232a2e; }
+
+.svhr-tagline {
+  margin-top: 46px;
+  text-align: center;
+  color: #FFD700;
+  font-size: 1.15rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  opacity: 0.81;
+  margin-bottom: 5px;
+}
+
+/* --- Board HR Log --- */
+.svhr-boardlog-panel {
+  background: #232a2e;
+  border-radius: 13px;
+  box-shadow: 0 2px 13px #FFD70012;
+  padding: 17px 19px 10px 19px;
+  margin-top: 15px;
+  margin-bottom: 9px;
+  max-width: 1100px;
+}
+.svhr-boardlog-title {
+  color: #FFD700;
+  font-size: 1.13rem;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  margin-bottom: 7px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.svhr-boardlog-list {
+  font-size: 1.04rem;
+  color: #b7bec9;
+  font-weight: 700;
+}
+.svhr-log-empty {
+  font-size: 1.01rem;
+  color: #b7bec9;
+  opacity: 0.65;
+  margin-top: 6px;
+}
+.svhr-log-entry {
+  padding: 3px 0;
+  display: flex;
+  gap: 17px;
+  border-bottom: 1px solid #b7bec911;
+  align-items: center;
+  font-size: 1.01rem;
+}
+.svhr-log-time { color: #FFD700; font-size: 0.98rem; margin-right: 2px; font-weight: 800;}
+.svhr-log-user { color: #35b378; font-size: 1.01rem;}
+.svhr-log-action { color: #f2a900; font-size: 1.01rem;}
+.svhr-log-title { color: #fff; font-size: 1.01rem; font-weight: 700;}
+.svhr-log-impact { color: #b7bec9; font-size: 0.98rem; margin-left: 8px;}
+
+/* --- Modal --- */
+.svhr-modal-overlay {
+  position: fixed;
+  left: 0; top: 0; width: 100vw; height: 100vh;
+  background: rgba(34,39,43,0.97);
+  z-index: 3000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.svhr-modal {
+  background: #232a2e;
+  color: #FFD700;
+  border-radius: 19px;
+  box-shadow: 0 7px 38px #FFD70017;
+  padding: 30px 34px 19px 34px;
+  min-width: 390px;
+  max-width: 600px;
+  font-size: 1.10rem;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.svhr-modal-header {
+  font-size: 1.18rem;
+  color: #FFD700;
+  font-weight: 900;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+.svhr-modal-close {
+  margin-left: auto;
+  font-size: 2.1rem;
+  color: #FFD700;
+  background: none;
+  border: none;
+  cursor: pointer;
+  opacity: 0.84;
+}
+.svhr-modal-row {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.svhr-modal label {
+  font-size: 1.05rem;
+  font-weight: 900;
+  color: #b7bec9;
+  margin-right: 5px;
+}
+.svhr-modal input[type="text"], .svhr-modal input[type="number"], .svhr-modal select, .svhr-modal input[type="date"] {
+  background: #2b3238;
+  color: #FFD700;
+  border-radius: 6px;
+  border: none;
+  padding: 6px 12px;
+  font-size: 1.01rem;
+  font-weight: 700;
+}
+.svhr-modal input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin-left: 6px;
+  accent-color: #FFD700;
+}
+.svhr-modal-actions {
+  margin-top: 16px;
+  text-align: center;
+}
+.svhr-modal-actions .svhr-pdf-btn {
+  font-size: 1.10rem;
+  font-weight: 900;
+}

@@ -1,0 +1,45 @@
+/* --- ClubStrategicGrowthDashboard.css --- */
+#club-growth-dashboard-root {
+  /* Ensures all font smoothing and elite color feel */
+  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+#club-growth-dashboard-root table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+#club-growth-dashboard-root th, #club-growth-dashboard-root td {
+  padding: 11px 16px;
+  text-align: left;
+  border-bottom: 1px solid #FFD70022;
+}
+#club-growth-dashboard-root thead tr {
+  background: linear-gradient(90deg, #FFD700 0%, #27ef7d 100%);
+  color: #222 !important;
+  font-weight: 900;
+  font-size: 17px;
+}
+#club-growth-dashboard-root tbody tr {
+  transition: background 0.12s;
+}
+#club-growth-dashboard-root tbody tr:hover {
+  background: #FFD70011;
+}
+#club-growth-dashboard-root input,
+#club-growth-dashboard-root select {
+  background: #181e23;
+  color: #FFD700;
+  border: 1.5px solid #FFD70077;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 6px;
+  padding: 7px 12px;
+  outline: none;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  width: 100%;
+}
+#club-growth-dashboard-root button {
+  transition: background 0.13s, color 0.13s, box-shadow 0.17s;
+}

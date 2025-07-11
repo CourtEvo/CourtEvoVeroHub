@@ -1,0 +1,179 @@
+.orcc-main {
+  background: #232a2e;
+  color: #fff;
+  border-radius: 22px;
+  box-shadow: 0 6px 32px rgba(24, 27, 32, 0.32);
+  padding: 32px 32px 16px 32px;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 30px 0 32px 0;
+}
+.orcc-header {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 18px;
+}
+.orcc-header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 4px 0;
+  letter-spacing: 1.2px;
+  color: #FFD700;
+}
+.orcc-subtitle {
+  font-size: 1.06rem;
+  color: #1de682;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.orcc-searchbar {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: #22282c;
+  border-radius: 14px;
+  padding: 8px 16px;
+  margin-bottom: 22px;
+}
+.orcc-searchbar input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1.07rem;
+  outline: none;
+  margin-left: 10px;
+}
+.orcc-searchbar button {
+  background: #FFD700;
+  color: #232a2e;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: background 0.15s;
+}
+.orcc-searchbar button:hover {
+  background: #1de682;
+}
+.orcc-table {
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 1px 9px rgba(32,40,51,0.12);
+  background: #20262a;
+}
+.orcc-thead, .orcc-trow {
+  display: grid;
+  grid-template-columns: 1.1fr 1.7fr 1.3fr 0.7fr 0.8fr 1.1fr;
+  align-items: stretch;
+}
+.orcc-thead {
+  background: #283E51;
+  color: #FFD700;
+  font-weight: 700;
+  font-size: 1.03rem;
+  border-bottom: 2px solid #FFD70055;
+  min-height: 46px;
+}
+.orcc-th, .orcc-td {
+  padding: 14px 10px;
+  border-right: 1px solid #222;
+  display: flex;
+  align-items: flex-start;
+  font-size: 1rem;
+}
+.orcc-th:last-child, .orcc-td:last-child {
+  border-right: none;
+}
+.orcc-trow {
+  background: #232a2e;
+  border-bottom: 1px solid #252c33;
+  min-height: 52px;
+  transition: background 0.13s;
+}
+.orcc-trow:hover {
+  background: #283E51;
+}
+.orcc-trow-alert {
+  border-left: 6px solid #FFD700;
+  background: #262b2e !important;
+  animation: orcc-pulse 0.7s linear;
+}
+@keyframes orcc-pulse {
+  0% { box-shadow: 0 0 0 0 #FFD70044; }
+  70% { box-shadow: 0 0 0 9px #FFD70022; }
+  100% { box-shadow: 0 0 0 0 #FFD70000; }
+}
+.orcc-area {
+  font-weight: 600;
+  color: #FFD700;
+  font-size: 1.08rem;
+}
+.orcc-rolelist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.orcc-rolename {
+  font-weight: 500;
+  color: #fff;
+  margin-left: 3px;
+}
+.orcc-raci {
+  margin-left: 8px;
+  font-size: 0.98rem;
+  color: #1de682;
+  background: #202f25;
+  padding: 1px 7px;
+  border-radius: 8px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.orcc-efficiency {
+  font-weight: 800;
+  font-size: 1.18rem;
+  border-radius: 10px;
+  padding: 7px 15px;
+  background: #FFD700;
+  color: #232a2e;
+  min-width: 65px;
+  text-align: center;
+}
+.orcc-alert {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+.orcc-footer {
+  margin-top: 26px;
+  font-size: 1.02rem;
+  opacity: 0.76;
+  color: #FFD700;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-weight: 500;
+}
+.orcc-draggable {
+  cursor: grab;
+  transition: background 0.12s;
+}
+.orcc-draggable:active {
+  background: #1de68222;
+}
+.orcc-ai-coach {
+  color: #FFD700;
+  font-weight: 500;
+  font-size: 0.97rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}

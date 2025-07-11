@@ -1,0 +1,53 @@
+.activation-board {
+  background: rgba(40, 62, 81, 0.85);
+  border-radius: 22px;
+  box-shadow: 0 4px 38px #FFD70044;
+  padding: 0 0 24px 0;
+}
+
+.activation-board h2 {
+  font-family: 'Segoe UI', sans-serif;
+  letter-spacing: 1.2px;
+}
+
+.activation-board input,
+.activation-board textarea,
+.activation-board select {
+  border: 1.2px solid #FFD700;
+  border-radius: 7px;
+  font-size: 15px;
+  padding: 7px 12px;
+  margin-bottom: 7px;
+  background: #222e3d;
+  color: #fff;
+  outline: none;
+  transition: border 0.17s;
+}
+.activation-board input:focus,
+.activation-board textarea:focus,
+.activation-board select:focus {
+  border: 2px solid #27ef7d;
+}
+
+.activation-board button {
+  font-family: inherit;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  transition: background 0.13s, color 0.13s, box-shadow 0.16s;
+}
+
+.activation-board a {
+  color: #27ef7d;
+  font-weight: 700;
+}
+
+.activation-board ul {
+  margin: 0 0 0 15px;
+  padding: 0;
+}
+
+@media (max-width: 900px) {
+  .activation-board {
+    padding: 8px 0;
+  }
+}

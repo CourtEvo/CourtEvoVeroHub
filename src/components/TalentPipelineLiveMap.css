@@ -1,0 +1,44 @@
+.talent-pipeline-map {
+  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+}
+.talent-card {
+  transition: box-shadow 0.15s, transform 0.15s, border 0.14s;
+  border: 2px solid transparent;
+}
+.talent-card:hover {
+  box-shadow: 0 12px 36px #FFD70077, 0 2px 30px #181e2390;
+  border-color: #27ef7d !important;
+  color: #fff !important;
+}
+.talent-ticker {
+  animation: tickerPulse 2s infinite alternate;
+}
+@keyframes tickerPulse {
+  0% { box-shadow: 0 2px 8px #FFD70033; }
+  100% { box-shadow: 0 5px 25px #FFD70055; }
+}
+.talent-add-form input, .talent-add-form select {
+  font-size: 17px;
+  color: #FFD700;
+  background: #181e23;
+  border: 1.7px solid #FFD70077;
+  border-radius: 7px;
+  padding: 9px 13px;
+  margin-top: 4px;
+  font-weight: 700;
+}
+::-webkit-scrollbar-thumb { background: #FFD70044; border-radius: 8px; }
+::-webkit-scrollbar-track { background: #222c; border-radius: 10px; }
+.talent-filters-bar {
+  box-shadow: 0 4px 24px #FFD70013;
+}
+.talent-filters-wrap select,
+.talent-add-form select {
+  background: #181e23;
+  color: #FFD700;
+  border: 1.4px solid #FFD70077;
+}
+.talent-filters-wrap label {
+  font-weight: 900;
+  color: #FFD700;
+}

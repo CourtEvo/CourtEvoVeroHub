@@ -1,0 +1,330 @@
+.fls-root {
+  background: linear-gradient(120deg, #232a2e 85%, #1de68211 100%);
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  border-radius: 22px;
+  box-shadow: 0 4px 24px #232a2e80;
+  padding: 32px 38px 28px 38px;
+  margin: 30px auto 32px auto;
+  max-width: 1480px;
+}
+
+.fls-header {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  margin-bottom: 20px;
+}
+.fls-title {
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: #FFD700;
+  flex: 1;
+}
+.fls-score {
+  font-weight: 900;
+  font-size: 1.19em;
+  color: #1de682;
+  display: flex;
+  align-items: center;
+}
+
+.fls-filter-row {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+.fls-filter-row select {
+  background: #232a2e;
+  color: #FFD700;
+  border-radius: 8px;
+  padding: 6px 13px;
+  border: 1.5px solid #FFD70044;
+  font-size: 1.05em;
+}
+
+.fls-main-grid {
+  display: flex;
+  gap: 30px;
+}
+
+.fls-list {
+  min-width: 265px;
+  background: #202427;
+  border-radius: 15px;
+  padding: 14px 10px 15px 15px;
+  box-shadow: 0 2px 9px #1de6820a;
+}
+.fls-fb-card {
+  background: #232a2e;
+  border-radius: 10px;
+  margin-bottom: 13px;
+  padding: 14px 12px 11px 15px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.06em;
+  transition: box-shadow 0.15s, border-color 0.13s;
+}
+.fls-fb-card.selected,
+.fls-fb-card:hover {
+  border: 2px solid #FFD700;
+  box-shadow: 0 2px 12px #FFD70018;
+}
+.fls-fb-icon { margin-right: 2px; font-size: 1.2em; }
+.fls-fb-name {
+  font-weight: 900;
+  color: #FFD700;
+  font-size: 1.07em;
+}
+.fls-fb-type, .fls-fb-area, .fls-fb-cycle {
+  color: #1de682;
+  font-size: 0.97em;
+  margin-left: 7px;
+  font-weight: 700;
+}
+.fls-fb-status {
+  background: #FFD700;
+  color: #232a2e;
+  border-radius: 7px;
+  padding: 3px 13px;
+  margin-left: 9px;
+  font-size: 0.98em;
+  font-weight: 900;
+}
+.fls-fb-flag {
+  color: #FF4444;
+  margin-left: 7px;
+  font-size: 1.1em;
+}
+
+.fls-dashboard {
+  flex: 1.1;
+  margin-left: 11px;
+  background: #202427;
+  border-radius: 14px;
+  padding: 20px 28px 18px 32px;
+  box-shadow: 0 2px 13px #1de68215;
+  min-width: 440px;
+}
+
+.fls-fb-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 1.21em;
+  margin-bottom: 8px;
+  font-weight: 900;
+  color: #FFD700;
+}
+.fls-fb-main { margin-right: 5px; }
+.fls-fb-typechip {
+  background: #1de68222;
+  color: #1de682;
+  border-radius: 8px;
+  padding: 3px 12px;
+  font-weight: 700;
+  font-size: 0.97em;
+}
+.fls-fb-cyclechip {
+  background: #FFD70022;
+  color: #FFD700;
+  border-radius: 8px;
+  padding: 3px 12px;
+  font-weight: 700;
+  font-size: 0.97em;
+  margin-left: 6px;
+}
+.fls-fb-statuschip {
+  background: #FFD700;
+  color: #232a2e;
+  border-radius: 8px;
+  padding: 3px 12px;
+  font-weight: 900;
+  font-size: 0.98em;
+  margin-left: 10px;
+}
+
+.fls-trend-section, .fls-bar-section {
+  margin-bottom: 13px;
+}
+.fls-trend-title, .fls-bar-title {
+  color: #1de682;
+  font-weight: 800;
+  margin-bottom: 5px;
+  font-size: 1.09em;
+}
+.fls-trend-chart, .fls-bar-chart {
+  background: #232a2e;
+  border-radius: 10px;
+  padding: 10px 15px 10px 20px;
+  min-height: 120px;
+  box-shadow: 0 1px 7px #1de68210;
+}
+
+.fls-fb-comments {
+  margin: 9px 0 11px 0;
+}
+.fls-fb-comments h4 {
+  color: #FFD700;
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+.fls-fb-comments ul {
+  list-style: none;
+  margin: 0; padding: 0 0 2px 0;
+}
+.fls-fb-comments li {
+  margin-bottom: 4px;
+  color: #fff;
+  font-size: 1.03em;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.fls-comment-input {
+  background: #232a2e;
+  color: #FFD700;
+  border: 1px solid #FFD70044;
+  border-radius: 8px;
+  width: 100%;
+  font-size: 1.03em;
+  padding: 6px 14px;
+  margin: 5px 0 4px 0;
+}
+.fls-comment-btn {
+  background: #1de682;
+  color: #232a2e;
+  border: none;
+  border-radius: 8px;
+  font-weight: 800;
+  font-size: 1.05em;
+  padding: 6px 19px;
+  cursor: pointer;
+  transition: background 0.13s;
+}
+.fls-comment-btn:hover { background: #FFD700; color: #232a2e; }
+
+.fls-ai-section {
+  margin-top: 10px;
+}
+.fls-ai-btn {
+  background: #FFD700;
+  color: #232a2e;
+  border: none;
+  border-radius: 9px;
+  font-weight: 800;
+  font-size: 1.08em;
+  padding: 10px 25px;
+  cursor: pointer;
+  margin-bottom: 6px;
+  box-shadow: 0 1px 7px #FFD70018;
+}
+.fls-ai-btn:hover { background: #1de682; color: #232a2e; }
+.fls-ai-output {
+  background: #232a2e;
+  border-radius: 10px;
+  margin: 7px 0 8px 0;
+  padding: 10px 14px;
+  color: #FFD700;
+  font-size: 1.05em;
+  white-space: pre-wrap;
+}
+
+.fls-kanban {
+  min-width: 270px;
+  background: #202427;
+  border-radius: 14px;
+  padding: 18px 15px 17px 18px;
+  margin-left: 10px;
+  box-shadow: 0 2px 12px #FFD70018;
+}
+.fls-kanban h3 {
+  color: #FFD700;
+  font-weight: 900;
+  font-size: 1.12em;
+  margin-bottom: 8px;
+}
+.fls-kanban-board {
+  display: flex;
+  gap: 11px;
+  margin-bottom: 10px;
+}
+.fls-kanban-col {
+  flex: 1;
+  background: #232a2e;
+  border-radius: 9px;
+  padding: 7px 7px 11px 8px;
+  min-width: 100px;
+  border: 2px solid #FFD70022;
+  box-shadow: 0 1px 6px #FFD70009;
+}
+.fls-kanban-title {
+  color: #1de682;
+  font-weight: 800;
+  font-size: 1.03em;
+  margin-bottom: 7px;
+  letter-spacing: 0.5px;
+}
+.fls-kanban-card {
+  background: #202427;
+  border-radius: 7px;
+  margin-bottom: 6px;
+  padding: 7px 8px 5px 10px;
+  border-left: 4px solid #FFD700;
+  color: #fff;
+  font-weight: 600;
+  box-shadow: 0 1px 5px #FFD70010;
+}
+.fls-kanban-owner, .fls-kanban-status {
+  color: #1de682;
+  font-weight: 700;
+  font-size: 0.97em;
+}
+.fls-kanban-card select {
+  background: #202427;
+  color: #FFD700;
+  border: 1px solid #FFD70055;
+  border-radius: 7px;
+  padding: 2px 9px;
+  margin-left: 3px;
+  font-size: 1em;
+  outline: none;
+}
+.fls-kanban-add {
+  margin-top: 9px;
+  display: flex;
+  gap: 7px;
+}
+.fls-kanban-input {
+  background: #232a2e;
+  color: #FFD700;
+  border: 1px solid #FFD70055;
+  border-radius: 7px;
+  padding: 6px 11px;
+  font-size: 1em;
+  flex: 2;
+}
+.fls-kanban-btn {
+  background: #1de682;
+  color: #232a2e;
+  font-weight: 700;
+  border-radius: 7px;
+  border: none;
+  padding: 7px 15px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.13s;
+}
+.fls-kanban-btn:hover { background: #FFD700; color: #232a2e; }
+
+.fls-footer {
+  margin-top: 22px;
+  font-size: 1.11rem;
+  color: #FFD700;
+  text-align: right;
+  font-weight: 700;
+}
